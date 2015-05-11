@@ -1,13 +1,17 @@
-<?php echo doctype('html5');
-	foreach ($results as $row)
-	{
-		$title = $row->title;
-	}
-?>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<title><?php echo $title; ?></title>
-	<script src="<?php echo base_url(); ?>scripts/test.js"></script>
-	<link href='<?php echo base_url(); ?>styles/style.css' type="text/css" rel='stylesheet' />
+	<div class="page-header">
+		<?php
+			foreach ($results as $row)
+			{
+				$title = $row->title;
+			}
+		?>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title><?php echo $title; ?></title>
+		<link href='<?php echo base_url(); ?>styles/css/bootstrap.css' type="text/css" rel='stylesheet' />
+		<script src="<?php echo base_url(); ?>styles/js/bootstrap.js"></script>
+	</div>
 </head>
+<body>
