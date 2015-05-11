@@ -4,39 +4,41 @@ class Site extends CI_Controller {
 
 	public function index()
 	{
-		$data['title'] = 'Index';
-		$data['heading'] = 'This is the front page';
-		$this->load->view('header', $data);
-		$this->load->view('nav', $data);
-		$this->load->view('site', $data);
-		$this->load->view('footer', $data);
-	}
+		$this->load->model('Database');
 
-	public function home()
-	{
-		$data['title'] = 'Home';
-		$this->load->view('home', $data);
+		$data['heading'] = 'Front Page';
+		$data['results'] = $this->Database->show("index");
+
+		$this->load->view('header', $data);
+		$this->load->view('nav');
+		$this->load->view('site', $data);
+		$this->load->view('footer');
 	}
 
 	public function about()
 	{
-		$data['title'] = "About";
+		$this->load->model('Database');
+
+		$data['heading'] = 'About page';
+		$data['results'] = $this->Database->show("about");
+
 		$this->load->view('header', $data);
-		$this->load->view('nav', $data);
+		$this->load->view('nav');
 		$this->load->view('about', $data);
-		$this->load->view('footer', $data);
+		$this->load->view('footer');
 	}
 
-	public function show()
+	public function clam()
 	{
-		$this->load->model("Database");
-		$data['results'] = $this->Database->show();
-		$data['title'] = "Show database and stuff";
+		$this->load->model('Database');
+
+		$data['heading'] = 'Clam tool page';
+		$data['results'] = $this->Database->show("clam");
 
 		$this->load->view('header', $data);
-		$this->load->view('nav', $data);
-		$this->load->view('database', $data);
-		$this->load->view('footer', $data);
+		$this->load->view('nav');
+		$this->load->view('about', $data);
+		$this->load->view('footer');
 	}
 
 	public function insert()

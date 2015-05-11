@@ -1,28 +1,13 @@
-<?php echo doctype('html5'); ?>
+<?php echo doctype('html5');
+	foreach ($results as $row)
+	{
+		$title = $row->title;
+	}
+?>
 <html lang="en">
 <head>
 	<meta charset="utf-8">
 	<title><?php echo $title; ?></title>
-	<style>
-		body, html, p {
-			margin:2px; padding:5px;
-		}
-
-		#nav{
-			margin:50px auto 0 auto;
-			padding:20px;
-			width:auto;
-			height: 30px;
-		}
-
-		#nav ul{
-			list-style: none;
-			float: left;
-			margin: 0 50px;
-		}
-
-		#nav li{
-			display: inline;
-		}
-	</style>
+	<script src="<?php echo base_url(); ?>scripts/test.js"></script>
+	<link href='<?php echo base_url(); ?>styles/style.css' type="text/css" rel='stylesheet' />
 </head>

@@ -2,9 +2,9 @@
 
 class Database extends CI_Model
 {
-	function show()
+	function show($page)
 	{
-		$query = $this->db->query("SELECT * FROM text");
+		$query = $this->db->get_where("pageData", array("page" => $page));
 		return $query->result();
 	}
 
