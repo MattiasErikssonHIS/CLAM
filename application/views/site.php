@@ -2,9 +2,8 @@
 <body>
 	<div id="container">
 		<div class="content">
-			<h1>Welcome to CLAM!</h1>
+			<?php echo heading($heading, 1); ?>
 			<div class="bodypart">
-				<p>This is the startpage of CLAM</p>
 				<p>Bacon ipsum dolor amet kevin corned beef cupim andouille, pork tongue swine short loin frankfurter pancetta chuck. Ribeye short loin shankle meatloaf chuck, spare ribs prosciutto cupim fatback. Capicola tri-tip meatloaf shankle corned beef boudin, jerky swine cupim strip steak alcatra turducken pork loin venison jowl. Filet mignon shoulder fatback beef ribs shankle pastrami. Rump venison boudin, landjaeger pork brisket drumstick picanha kielbasa chicken. Cow brisket shankle short ribs flank turducken corned beef biltong meatball ground round pork belly cupim leberkas kielbasa pastrami. Prosciutto tenderloin pork chop chicken turducken drumstick ball tip.</p>
 
 				<p>Cupim frankfurter kielbasa, pork chop ribeye turkey ham. Cow landjaeger fatback, chicken prosciutto porchetta kevin shoulder turkey pork loin strip steak leberkas. Shank sausage brisket salami ham cupim flank filet mignon tongue rump meatloaf pig sirloin. Jerky salami turducken meatball bacon turkey pork belly doner brisket rump shank chicken.</p>

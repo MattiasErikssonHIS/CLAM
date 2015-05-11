@@ -5,6 +5,7 @@ class Site extends CI_Controller {
 	public function index()
 	{
 		$data['title'] = 'Index';
+		$data['heading'] = 'This is the front page';
 		$this->load->view('header', $data);
 		$this->load->view('nav', $data);
 		$this->load->view('site', $data);
