@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php echo doctype('html5'); ?>
 <html lang="en">
 <head>
 	<meta charset="utf-8">
