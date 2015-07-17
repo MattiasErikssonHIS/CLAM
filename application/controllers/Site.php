@@ -42,31 +42,52 @@ class Site extends CI_Controller {
 		$this->load->view('footer');
 	}
 
-	public function send_email()
+	public function results()
 	{
-		$this->load->library('form_validation');
-		$this->form_validation->set_rules("fullName", "Full name", "required");
-		$this->form_validation->set_rules("message", "Message", "required");
+		$data['clam'] = $this->input->post();
+		array_pop($data['clam']);
+		foreach($data['clam'] as $key => $row) {
 
-		if ($this->form_validation->run() === FALSE)
-		{
-			$data['message'] = "";
-			$this->load->model('Database');
-			$data['heading'] = 'Clam tool page';
-			$data['results'] = $this->Database->show("clam");
-			$this->load->view('header', $data);
-			$this->load->view('nav');
-			$this->load->view('clam', $data);
-			$this->load->view('footer');
-		} else {
-			$data['message'] = set_value('message');
-			$this->load->model('Database');
-			$data['heading'] = 'Clam tool page';
-			$data['results'] = $this->Database->show("clam");
-			$this->load->view('header', $data);
-			$this->load->view('nav');
-			$this->load->view('clam', $data);
-			$this->load->view('footer');
+		}
+
+		$this->load->model('Database');
+		$data['heading'] = 'The results';
+		//$data['results'] = $this->Database->show("results");
+		$this->load->view('header', $data);
+		$this->load->view('nav');
+		$this->load->view('result', $data);
+		$this->load->view('footer');
+	}
+
+	public function calculate()
+	{
+		$compute['A'] = $_POST['saturation'];
+		$compute['B'] = $_POST['variant_flora'];
+		$compute['C'] = $_POST['lvl_of_difficulty'];
+		$compute['D'] = $_POST['difficulty_of_use'];
+		$compute['E'] = $_POST['production_awareness'];
+		$compute['F'] = $_POST['num_of_tools'];
+		$compute['G'] = $_POST['mapping_of_workstation'];
+		$compute['H'] = $_POST['parts_ident'];
+		$compute['I'] = $_POST['info_cost'];
+		$compute['J'] = $_POST['quality_of_instructions'];
+		$compute['K'] = $_POST['poke_a_yoke'];
+
+		$Kf = 1;
+		$start = 1;
+
+		foreach ($compute as $key => $value) {
+			foreach ($compute as $key2 => $value2) {
+				if ($value > $value2) {
+					$result[$key] = 2;
+				} elseif ($value < $value2 || $key === $key2) {
+					$result[$key] = 0;
+				} else {
+					$result[$key] = 1;
+				}
+				echo $key . " " . $key2 . " " . $value . " " . $value2 . " " . $result[$key] . "<br/>";
+			}
+			echo "<br/>";
 		}
 	}
 
