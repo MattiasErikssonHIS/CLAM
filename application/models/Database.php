@@ -8,6 +8,13 @@ class Database extends CI_Model
 		return $query->result();
 	}
 
+	function get_instructions($page)
+	{
+		$this->db->where('page_number', $page);
+		$query = $this->db->get('instructions');
+		return $query->result();
+	}
+
 	function insert($text)
 	{
 		$this->db->insert("text", $text);

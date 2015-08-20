@@ -5,7 +5,7 @@
 			<a class="navbar-brand" href="<?php echo base_url(); ?>index.php/site/index">Home</a>
 			<a class="navbar-brand" href="<?php echo base_url(); ?>index.php/site/about">About</a>
 			<a class="navbar-brand" href="<?php echo base_url(); ?>index.php/site/clam">CLAM</a>
-			<a class="navbar-brand" href="#">Instructions</a>
+			<a class="navbar-brand" href="<?php echo base_url(); ?>index.php/site/instructions">Instructions</a>
 		</div>
 	</div>
 </nav>
