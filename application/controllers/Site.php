@@ -67,7 +67,8 @@ class Site extends CI_Controller {
 		$results = array();
 		$sums = array();
 
-		$weights = array(1,3,5,7,9,11,13,15,17,19,21,23,25);
+		$weight_range1 = array(1,4,9,10,7,11,2,4,3,4,7);
+		$weight_factors = array(1,3,5,7,9,11,13,15,17,19,21,23,25);
 
 		$indata1[] = $_POST['saturation'];
 		$indata1[] = $_POST['variant_flora'];
@@ -81,12 +82,11 @@ class Site extends CI_Controller {
 		$indata1[] = $_POST['quality_of_instructions'];
 		$indata1[] = $_POST['poke_a_yoke'];
 
-		$indata2 = $indata1;
+		$weight_range2 = $weight_range1;
 
-		foreach ($indata1 as $key1 => $X) {
+		foreach ($weight_range1 as $key1 => $X) {
 			$Z = 0;
-			foreach ($indata2 as $key2 => $Y) {
-		
+			foreach ($weight_range2 as $key2 => $Y) {
 				if ($key1 === $key2) {
 					$Z = 0 - $Z;
 					$results[$key1][$key2] = $Z;
@@ -101,28 +101,34 @@ class Site extends CI_Controller {
 					$results[$key1][$key2] = 2;
 				}
 				$Z += $results[$key1][$key2];
-		
+
 			}
 		}
 
 		$sum_it_up = array();
-
-		for ($x = 0; $x <= 10; $x++) {
+		$add_flag = 0;
+		while ($add_flag <= 10) {
 			foreach ($results as $key => $result_array) {
-				if (isset($result_array[$x])) {
-					$sum_it_up[$x] += $result_array[$x];
+				if (isset($result_array[$add_flag])) {
+					if (!isset($sum_it_up[$add_flag])) {
+						$sum_it_up[$add_flag] = 0;
+					}
+					$sum_it_up[$add_flag] += $result_array[$add_flag];
 				}
 			}
-			$sum_it_up[$x] += $weights[$x];
+			$sum_it_up[$add_flag] += $weight_factors[$add_flag];
+			$add_flag++;
 		}
+
 
 		$float_array = array();
 		$weighted_score_array = array();
 
 		foreach ($sum_it_up as $key => $value) {
-	
+
 			$float_array[] = $sum_it_up[$key]/array_sum($sum_it_up);
 		}
+
 		foreach ($float_array as $key => $float) {
 			$float_array[$key] = round($float, 2);
 		}
