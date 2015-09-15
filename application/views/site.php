@@ -9,7 +9,6 @@
 ?>
 
 <div class="text-area-frontpage">
-	<h1><?php echo $title; ?></h1>
 	<p><?php echo $text1; ?></p>
 	<p><?php echo $text2; ?></p>
 </div>

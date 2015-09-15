@@ -2,32 +2,29 @@
 
 <div class="container">
 	<div class="row">
-		<div class="col-lg-12 well">
-			<?php
-				foreach ($results as $row)
-				{
-					$title = $row->title;
-					$text2 = $row->text2;
-					$saturation = $row->saturation;
-					$variant_flora = $row->variant_flora;
-					$lvl_of_difficulty = $row->lvl_of_difficulty;
-					$difficulty_of_use = $row->difficulty_of_use;
-					$production_awareness = $row->production_awareness;
-					$num_of_tools = $row->num_of_tools;
-					$mapping_of_workstation = $row->mapping_of_workstation;
-					$parts_ident = $row->parts_ident;
-					$info_cost = $row->info_cost;
-					$quality_of_instructions = $row->quality_of_instructions;
-					$poke_a_yoke = $row->poke_a_yoke;
-				}
+		<?php
+			foreach ($results as $row)
+			{
+				$title = $row->title;
+				$text2 = $row->text2;
+				$saturation = $row->saturation;
+				$variant_flora = $row->variant_flora;
+				$lvl_of_difficulty = $row->lvl_of_difficulty;
+				$difficulty_of_use = $row->difficulty_of_use;
+				$production_awareness = $row->production_awareness;
+				$num_of_tools = $row->num_of_tools;
+				$mapping_of_workstation = $row->mapping_of_workstation;
+				$parts_ident = $row->parts_ident;
+				$info_cost = $row->info_cost;
+				$quality_of_instructions = $row->quality_of_instructions;
+				$poke_a_yoke = $row->poke_a_yoke;
+			}
 
-				echo heading($title, 1);
-				$this->load->helper("form");
-				echo validation_errors();
-			?>
-		</div>
+			$this->load->helper("form");
+			echo validation_errors();
+		?>
 	</div>
-		<div class="form-group">
+	<div class="form-group">
 		<?php if ($calc_result === null): ?>
 
 			<div class="col-md-12">
@@ -42,6 +39,7 @@
 				<?php
 					echo form_open('site/calculate');
 					echo form_label("Saturation: ", "data");
+					echo "<p class='text-justify'>" . $saturation . "</p>";
 					$data = array(
 						0 => 'L0 Not applicable',
 						1 => 'L1',
@@ -55,10 +53,9 @@
 					);
 					echo form_dropdown('saturation', $data, '0', 'class="form-control"');
 
-					echo "<p class='text-justify'>" . $saturation . "</p>";
-
 					echo br(1);
 					echo form_label("Variant Flora: ", "data");
+					echo "<p class='text-justify'>" . $variant_flora . "</p>";
 					$data = array(
 						0 => 'L0 No variant products.',
 						1 => 'L1',
@@ -71,10 +68,10 @@
 						8 => 'L8 One piece production. Full variation.'				);
 					echo form_dropdown('variant_flora', $data, '0', 'class="form-control"');
 
-					echo "<p class='text-justify'>" . $variant_flora . "</p>";
 
 					echo br(1);
 					echo form_label("Level of difficulty: ", "data");
+					echo "<p class='text-justify'>" . $lvl_of_difficulty . "</p>";
 					$data = array(
 						0 => 'L0 Not applicable',
 						1 => 'L1',
@@ -88,10 +85,10 @@
 					);
 					echo form_dropdown('lvl_of_difficulty', $data, '0', 'class="form-control"');
 
-					echo "<p class='text-justify'>" . $lvl_of_difficulty . "</p>";
 
 					echo br(1);
 					echo form_label("Difficulty to use tool: ", "data");
+					echo "<p class='text-justify'>" . $difficulty_of_use . "</p>";
 					$data = array(
 						0 => 'No tool use',
 						1 => 'L1',
@@ -105,10 +102,10 @@
 					);
 					echo form_dropdown('difficulty_of_use', $data, '0', 'class="form-control"');
 
-					echo "<p class='text-justify'>" . $difficulty_of_use . "</p>";
 
 					echo br(1);
 					echo form_label("Production awareness: ", "data");
+					echo "<p class='text-justify'>" . $production_awareness . "</p>";
 					$data = array(
 						0 => 'L0 Not applicable',
 						1 => 'L1',
@@ -121,9 +118,10 @@
 						8 => 'L8 The assembly task is highly variable and contains little to very little routine work.'
 					);
 					echo form_dropdown('production_awareness', $data, '0', 'class="form-control"');
-					echo "<p class='text-justify'>" . $production_awareness . "</p>";
+
 					echo br(1);
 					echo form_label("Number of tools: ", "data");
+					echo "<p class='text-justify'>" . $num_of_tools . "</p>";
 					$data = array(
 						0 => 'L0 No tools used',
 						1 => 'L1',
@@ -136,9 +134,9 @@
 						8 => 'L8 More than 8 tools'
 					);
 					echo form_dropdown('num_of_tools', $data, '0', 'class="form-control"');
-					echo "<p class='text-justify'>" . $num_of_tools . "</p>";
 					echo br(1);
 					echo form_label("Mapping of workstation: ", "data");
+					echo "<p class='text-justify'>" . $mapping_of_workstation . "</p>";
 					$data = array(
 						0 => 'L0 Not applicable/the worker is free to set up the workstation and all its components to their own preferences.',
 						1 => 'L1',
@@ -151,9 +149,9 @@
 						8 => 'L8 Workstation layout does not correspond to assembly sequence.'
 					);
 					echo form_dropdown('mapping_of_workstation', $data, '0', 'class="form-control"');
-					echo "<p class='text-justify'>" . $mapping_of_workstation . "</p>";
 					echo br(1);
 					echo form_label("Parts identification: ", "data");
+					echo "<p class='text-justify'>" . $parts_ident . "</p>";
 					$data = array(
 						0 => 'L0 Not applicable',
 						1 => 'L1',
@@ -166,9 +164,10 @@
 						8 => 'L8 Parts identification through article numbers.'
 					);
 					echo form_dropdown('parts_ident', $data, '0', 'class="form-control"');
-					echo "<p class='text-justify'>" . $parts_ident . "</p>";
+
 					echo br(1);
 					echo form_label("Information cost: ", "data");
+					echo "<p class='text-justify'>" . $info_cost . "</p>";
 					$data = array(
 						0 => 'L0 Not applicable',
 						1 => 'L1',
@@ -181,9 +180,9 @@
 						8 => 'L8 Significant movement or actions are required for information access.'
 					);
 					echo form_dropdown('info_cost', $data, '0', 'class="form-control"');
-					echo "<p class='text-justify'>" . $info_cost . "</p>";
 					echo br(1);
 					echo form_label("Quality of instructions: ", "data");
+					echo "<p class='text-justify'>" . $quality_of_instructions . "</p>";
 					$data = array(
 						0 => 'L0 No instructions required',
 						1 => 'L1',
@@ -196,9 +195,9 @@
 						8 => 'L8 Instruction is filled with non priority information. Visibility AND readability is diminished.'
 					);
 					echo form_dropdown('quality_of_instructions', $data, '0', 'class="form-control"');
-					echo "<p class='text-justify'>" . $quality_of_instructions . "</p>";
 					echo br(1);
 					echo form_label("Poke-a-yoke: ", "data");
+					echo "<p class='text-justify'>" . $poke_a_yoke . "</p>";
 					$data = array(
 						0 => 'L0 Assembly errors cannot be made due to the design and fit of the product.',
 						1 => 'L1',
@@ -211,7 +210,6 @@
 						8 => 'L8 No poke-a-yoke solutions are implemented in the task.'
 					);
 					echo form_dropdown('poke_a_yoke', $data, '0', 'class="form-control"');
-					echo "<p class='text-justify'>" . $poke_a_yoke . "</p>";
 					echo br(1);
 					echo form_submit("contactSubmit", "Beräkna");
 					echo form_close();
