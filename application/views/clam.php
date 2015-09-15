@@ -25,10 +25,26 @@
 		?>
 	</div>
 	<div class="form-group">
-		<?php if ($calc_result === null): ?>
+			<?php if ($calc_result !== null): ?>
+				<div class="well">
+					<?php
+						echo "Your result is a value of " . $calc_result;
+						echo br(2);
+
+						if ($calc_result > 3.2) {
+							echo "According to these results the measured workstation require high cognitive load.";
+						} elseif ($calc_result >= 2.5 && $calc_result <= 3.2) {
+							echo "According to these results the measured workstation require moderate cognitive load.";
+						} elseif ($calc_result >= 1.7 && $calc_result <= 2.5) {
+							echo "According to these results the measured workstation require low cognitive load.";
+						} elseif ($calc_result >= 0 && $calc_result <= 1.7) {
+							echo "According to these results the measured workstation require very low cognitive load.";
+						}
+					?>
+				</div>
+			<?php  endif; ?>
 
 			<div class="col-md-12">
-
 				<h2>
 					<?php echo "Instructions"; ?>
 				</h2>
@@ -213,24 +229,6 @@
 					echo br(1);
 					echo form_submit("contactSubmit", "Beräkna");
 					echo form_close();
-				else:
-					echo "This is your result: " . $calc_result;
-
-					echo br(2);
-
-					if ($calc_result > 3.2) {
-						echo "According to this tool your results mean that you are under high cognitive load.";
-					} elseif ($calc_result >= 2.5 && $calc_result <= 3.2) {
-						echo "According to this tool your results mean that you are under moderate cognitive load.";
-					} elseif ($calc_result >= 1.7 && $calc_result <= 2.5) {
-						echo "According to this tool your results mean that you are under low cognitive load.";
-					} elseif ($calc_result >= 0 && $calc_result <= 1.7) {
-						echo "According to this tool your results mean that you are under very low cognitive load.";
-					}
-
-					echo "";
-
-				endif;
 				?>
 			</div>
 		</div>
