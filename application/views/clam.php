@@ -216,9 +216,20 @@
 					echo form_submit("contactSubmit", "Beräkna");
 					echo form_close();
 				else:
-					echo "This is the result page:";
+					echo "This is your result: " . $calc_result;
+
 					echo br(1);
-					echo $calc_result;
+
+					if ($calc_result > 3.2) {
+						echo "According to this tool your results mean that you are under high cognitive load.";
+					} elseif ($calc_result > 2.5 && $calc_result < 3.2) {
+						echo "According to this tool your results mean that you are under moderate cognitive load.";
+					} elseif ($calc_result > 1.7 && $calc_result < 2.5) {
+						echo "According to this tool your results mean that you are under low cognitive load.";
+					} elseif ($calc_result > 0 && $calc_result < 1.7) {						
+						echo "According to this tool your results mean that you are under very low cognitive load.";
+					}
+
 				endif;
 				?>
 			</div>
