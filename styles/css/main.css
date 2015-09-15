@@ -1,4 +1,25 @@
 .text-area-frontpage {
 	margin: 30px;
+	max-width: 30%;
 	text-align: justify;
+}
+
+.page-header {
+	border-bottom: none;
+}
+
+.navbar-header {
+	background-color: #d9edf7;
+}
+
+html, body {
+	background-color: #FFF;
+}
+
+@media (max-width: 900px) {
+	.text-area-frontpage {
+		margin: 30px;
+		max-width: 100%;
+		text-align: justify;
+	}
 }
