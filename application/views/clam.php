@@ -2,7 +2,7 @@
 
 <div class="container">
 	<div class="row">
-		<div class="col-lg-10 well">
+		<div class="col-lg-12 well">
 			<?php
 				foreach ($results as $row)
 				{
@@ -30,15 +30,15 @@
 		<div class="form-group">
 		<?php if ($calc_result === null): ?>
 
-			<div class="col-lg-8">
+			<div class="col-md-12">
+
 				<h2>
-				<?php echo "Instructions"; ?>
+					<?php echo "Instructions"; ?>
 				</h2>
 				<p class="text-justify">
 					<?php echo $text2; ?>
 				</p>
-			</div>
-			<div class="col-lg-5">
+
 				<?php
 					echo form_open('site/calculate');
 					echo form_label("Saturation: ", "data");
@@ -76,7 +76,7 @@
 					echo br(1);
 					echo form_label("Level of difficulty: ", "data");
 					$data = array(
-						0 => 'L0 No variant products.',
+						0 => 'L0 Not applicable',
 						1 => 'L1',
 						2 => 'L2 The task requires little to no training and is recommended for newly employed personnel.',
 						3 => 'L3',
@@ -93,7 +93,7 @@
 					echo br(1);
 					echo form_label("Difficulty to use tool: ", "data");
 					$data = array(
-						0 => 'L0 No variant products.',
+						0 => 'No tool use',
 						1 => 'L1',
 						2 => 'L2 The assembly task is performed mostly by hand and requires little or very simple tool use.',
 						3 => 'L3',
@@ -110,7 +110,7 @@
 					echo br(1);
 					echo form_label("Production awareness: ", "data");
 					$data = array(
-						0 => 'L0 No variant products.',
+						0 => 'L0 Not applicable',
 						1 => 'L1',
 						2 => 'L2 The assembly task is done purely out of routine and the sequence seldom changes.',
 						3 => 'L3',
@@ -148,7 +148,7 @@
 						5 => 'L5',
 						6 => 'L6 Workstation layout somewhat corresponds to assembly sequence.',
 						7 => 'L7',
-						8 => 'L8 More than 8 tools'
+						8 => 'L8 Workstation layout does not correspond to assembly sequence.'
 					);
 					echo form_dropdown('mapping_of_workstation', $data, '0', 'class="form-control"');
 					echo "<p class='text-justify'>" . $mapping_of_workstation . "</p>";
@@ -163,7 +163,7 @@
 						5 => 'L5',
 						6 => 'L6 Parts identification through symbol syntax.',
 						7 => 'L7',
-						8 => 'L8 More than 8 tools'
+						8 => 'L8 Parts identification through article numbers.'
 					);
 					echo form_dropdown('parts_ident', $data, '0', 'class="form-control"');
 					echo "<p class='text-justify'>" . $parts_ident . "</p>";
@@ -200,7 +200,7 @@
 					echo br(1);
 					echo form_label("Poke-a-yoke: ", "data");
 					$data = array(
-						0 => 'L0 No instructions required',
+						0 => 'L0 Assembly errors cannot be made due to the design and fit of the product.',
 						1 => 'L1',
 						2 => 'L2 Assembly errors can barely be made due to the design and fit of the product.',
 						3 => 'L3',
@@ -218,17 +218,19 @@
 				else:
 					echo "This is your result: " . $calc_result;
 
-					echo br(1);
+					echo br(2);
 
 					if ($calc_result > 3.2) {
 						echo "According to this tool your results mean that you are under high cognitive load.";
-					} elseif ($calc_result > 2.5 && $calc_result < 3.2) {
+					} elseif ($calc_result >= 2.5 && $calc_result <= 3.2) {
 						echo "According to this tool your results mean that you are under moderate cognitive load.";
-					} elseif ($calc_result > 1.7 && $calc_result < 2.5) {
+					} elseif ($calc_result >= 1.7 && $calc_result <= 2.5) {
 						echo "According to this tool your results mean that you are under low cognitive load.";
-					} elseif ($calc_result > 0 && $calc_result < 1.7) {						
+					} elseif ($calc_result >= 0 && $calc_result <= 1.7) {
 						echo "According to this tool your results mean that you are under very low cognitive load.";
 					}
+
+					echo "";
 
 				endif;
 				?>

@@ -3,12 +3,7 @@
 <head>
 	<div class="page-header">
 		<?php
-		/*
-			foreach ($results as $row)
-			{
-				$title = $row->title;
-			}
-			*/
+			echo "<h1>CLAM</h1>";
 		?>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title><?php echo $heading; ?></title>
