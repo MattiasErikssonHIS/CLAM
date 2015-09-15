@@ -1,6 +1,6 @@
 .text-area-frontpage {
 	margin: 30px;
-	max-width: 30%;
+	max-width: 40%;
 	text-align: justify;
 }
 
@@ -9,6 +9,10 @@
 }
 
 .navbar-header {
+	background-color: #d9edf7;
+}
+
+.container-fluid {
 	background-color: #d9edf7;
 }
 
