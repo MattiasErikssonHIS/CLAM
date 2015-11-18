@@ -174,6 +174,14 @@ class Site extends CI_Controller {
 		return $message;
 	}
 
+	public function insertInstructions()
+	{
+		$this->load->model("Database");
+		$indata = $_POST['instructions'];
+		$this->Database->insert($indata);
+		$this->instructions();
+	}
+
 	public function update()
 	{
 		$this->load->model("Database");

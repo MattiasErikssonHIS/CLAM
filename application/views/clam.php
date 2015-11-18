@@ -46,7 +46,7 @@
 
 			<div class="col-md-12">
 				<h2>
-					<?php echo "Instructions"; ?>
+					<?php echo "Assessment"; ?>
 				</h2>
 				<p class="text-justify">
 					<?php echo $text2; ?>
@@ -106,7 +106,7 @@
 					echo form_label("Difficulty to use tool: ", "data");
 					echo "<p class='text-justify'>" . $difficulty_of_use . "</p>";
 					$data = array(
-						0 => 'No tool use',
+						0 => 'L0 No tool use',
 						1 => 'L1',
 						2 => 'L2 The assembly task is performed mostly by hand and requires little or very simple tool use.',
 						3 => 'L3',
