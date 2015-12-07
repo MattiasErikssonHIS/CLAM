@@ -21,214 +21,238 @@
 			}
 
 			$this->load->helper("form");
-			echo validation_errors();
 		?>
 	</div>
 	<div class="form-group">
-			<?php if ($calc_result !== null): ?>
-				<div class="well">
-					<?php
-						echo "Your result is a value of " . $calc_result;
-						echo br(2);
-
-						if ($calc_result > 3.2) {
-							echo "According to these results the measured workstation require high cognitive load.";
-						} elseif ($calc_result >= 2.5 && $calc_result <= 3.2) {
-							echo "According to these results the measured workstation require moderate cognitive load.";
-						} elseif ($calc_result >= 1.7 && $calc_result <= 2.5) {
-							echo "According to these results the measured workstation require low cognitive load.";
-						} elseif ($calc_result >= 0 && $calc_result <= 1.7) {
-							echo "According to these results the measured workstation require very low cognitive load.";
-						}
-					?>
-				</div>
-			<?php  endif; ?>
-
-			<div class="col-md-12">
-				<h2>
-					<?php echo "Assessment"; ?>
-				</h2>
-				<p class="text-justify">
-					<?php echo $text2; ?>
-				</p>
-
+		<?php if (isset($calc_result)): ?>
+			<div class="well">
 				<?php
-					echo form_open('site/calculate');
-					echo form_label("Saturation: ", "data");
-					echo "<p class='text-justify'>" . $saturation . "</p>";
-					$data = array(
-						0 => 'L0 Not applicable',
-						1 => 'L1',
-						2 => 'L2 65% saturation or lower',
-						3 => 'L3',
-						4 => 'L4 65-75% saturation',
-						5 => 'L5',
-						6 => 'L6 75-85% saturation',
-						7 => 'L7',
-						8 => 'L8 86% saturation or higher'
-					);
-					echo form_dropdown('saturation', $data, '0', 'class="form-control"');
+					echo "Your result is a value of " . $calc_result;
+					echo br(2);
 
-					echo br(1);
-					echo form_label("Variant Flora: ", "data");
-					echo "<p class='text-justify'>" . $variant_flora . "</p>";
-					$data = array(
-						0 => 'L0 No variant products.',
-						1 => 'L1',
-						2 => 'L2 Up to 10% variant products.',
-						3 => 'L3',
-						4 => 'L4 Up to 35% variant products.',
-						5 => 'L5',
-						6 => 'L6 Up to 50% variant products.',
-						7 => 'L7',
-						8 => 'L8 One piece production. Full variation.'				);
-					echo form_dropdown('variant_flora', $data, '0', 'class="form-control"');
-
-
-					echo br(1);
-					echo form_label("Level of difficulty: ", "data");
-					echo "<p class='text-justify'>" . $lvl_of_difficulty . "</p>";
-					$data = array(
-						0 => 'L0 Not applicable',
-						1 => 'L1',
-						2 => 'L2 The task requires little to no training and is recommended for newly employed personnel.',
-						3 => 'L3',
-						4 => 'L4 The task is quite simple with little training required.',
-						5 => 'L5',
-						6 => 'L6 The task is slightly complex and requires moderate training and experience.',
-						7 => 'L7',
-						8 => 'L8 The task is very difficult and requires significant training and experience.'
-					);
-					echo form_dropdown('lvl_of_difficulty', $data, '0', 'class="form-control"');
-
-
-					echo br(1);
-					echo form_label("Difficulty to use tool: ", "data");
-					echo "<p class='text-justify'>" . $difficulty_of_use . "</p>";
-					$data = array(
-						0 => 'L0 No tool use',
-						1 => 'L1',
-						2 => 'L2 The assembly task is performed mostly by hand and requires little or very simple tool use.',
-						3 => 'L3',
-						4 => 'L4 The assembly task contains little to moderate tool use',
-						5 => 'L5',
-						6 => 'L6 The assembly task contains moderate to heavy tool use.',
-						7 => 'L7',
-						8 => 'L8 The assembly task requires complex tools/tool use and/or special tools to perform'
-					);
-					echo form_dropdown('difficulty_of_use', $data, '0', 'class="form-control"');
-
-
-					echo br(1);
-					echo form_label("Production awareness: ", "data");
-					echo "<p class='text-justify'>" . $production_awareness . "</p>";
-					$data = array(
-						0 => 'L0 Not applicable',
-						1 => 'L1',
-						2 => 'L2 The assembly task is done purely out of routine and the sequence seldom changes.',
-						3 => 'L3',
-						4 => 'L4 The assembly task is mostly done on routine but deviant parts or assemblies do occur.',
-						5 => 'L5',
-						6 => 'L6 The assembly task is quite variable but still contains much routine work.',
-						7 => 'L7',
-						8 => 'L8 The assembly task is highly variable and contains little to very little routine work.'
-					);
-					echo form_dropdown('production_awareness', $data, '0', 'class="form-control"');
-
-					echo br(1);
-					echo form_label("Number of tools: ", "data");
-					echo "<p class='text-justify'>" . $num_of_tools . "</p>";
-					$data = array(
-						0 => 'L0 No tools used',
-						1 => 'L1',
-						2 => 'L2 1 to 5 tools and easily identified',
-						3 => 'L3',
-						4 => 'L4 More than 5 tools and easily identified',
-						5 => 'L5',
-						6 => 'L6 5-8 tools and not easily identified',
-						7 => 'L7',
-						8 => 'L8 More than 8 tools'
-					);
-					echo form_dropdown('num_of_tools', $data, '0', 'class="form-control"');
-					echo br(1);
-					echo form_label("Mapping of workstation: ", "data");
-					echo "<p class='text-justify'>" . $mapping_of_workstation . "</p>";
-					$data = array(
-						0 => 'L0 Not applicable/the worker is free to set up the workstation and all its components to their own preferences.',
-						1 => 'L1',
-						2 => 'L2 Workstation layout heavily corresponds to assembly sequence.',
-						3 => 'L3',
-						4 => 'L4 Workstation layout completely corresponds to assembly sequence.',
-						5 => 'L5',
-						6 => 'L6 Workstation layout somewhat corresponds to assembly sequence.',
-						7 => 'L7',
-						8 => 'L8 Workstation layout does not correspond to assembly sequence.'
-					);
-					echo form_dropdown('mapping_of_workstation', $data, '0', 'class="form-control"');
-					echo br(1);
-					echo form_label("Parts identification: ", "data");
-					echo "<p class='text-justify'>" . $parts_ident . "</p>";
-					$data = array(
-						0 => 'L0 Not applicable',
-						1 => 'L1',
-						2 => 'L2 Sequenced kits or kanban is used for most items.',
-						3 => 'L3',
-						4 => 'L4 Unsequenced kits or kanban is used for most items.',
-						5 => 'L5',
-						6 => 'L6 Parts identification through symbol syntax.',
-						7 => 'L7',
-						8 => 'L8 Parts identification through article numbers.'
-					);
-					echo form_dropdown('parts_ident', $data, '0', 'class="form-control"');
-
-					echo br(1);
-					echo form_label("Information cost: ", "data");
-					echo "<p class='text-justify'>" . $info_cost . "</p>";
-					$data = array(
-						0 => 'L0 Not applicable',
-						1 => 'L1',
-						2 => 'L2 Information is not required for standard operations.',
-						3 => 'L3',
-						4 => 'L4 Information is easily accessible without significant physical or cognitive effort.',
-						5 => 'L5',
-						6 => 'L6 Information is accessible through minor cognitive or physical effort (max 1 meter).',
-						7 => 'L7',
-						8 => 'L8 Significant movement or actions are required for information access.'
-					);
-					echo form_dropdown('info_cost', $data, '0', 'class="form-control"');
-					echo br(1);
-					echo form_label("Quality of instructions: ", "data");
-					echo "<p class='text-justify'>" . $quality_of_instructions . "</p>";
-					$data = array(
-						0 => 'L0 No instructions required',
-						1 => 'L1',
-						2 => 'L2 Information is not required for standard operations.',
-						3 => 'L3',
-						4 => 'L4 Assembly sequences are separated and contains mostly relevant information',
-						5 => 'L5',
-						6 => 'L6 Assembly sequences are not clearly separated and visibility OR readability is diminished.',
-						7 => 'L7',
-						8 => 'L8 Instruction is filled with non priority information. Visibility AND readability is diminished.'
-					);
-					echo form_dropdown('quality_of_instructions', $data, '0', 'class="form-control"');
-					echo br(1);
-					echo form_label("Poke-a-yoke: ", "data");
-					echo "<p class='text-justify'>" . $poke_a_yoke . "</p>";
-					$data = array(
-						0 => 'L0 Assembly errors cannot be made due to the design and fit of the product.',
-						1 => 'L1',
-						2 => 'L2 Assembly errors can barely be made due to the design and fit of the product.',
-						3 => 'L3',
-						4 => 'L4 Assembly constraints are present in most of the assembly sequence.',
-						5 => 'L5',
-						6 => 'L6 Assembly constraints are present but not throughout the assembly sequence.',
-						7 => 'L7',
-						8 => 'L8 No poke-a-yoke solutions are implemented in the task.'
-					);
-					echo form_dropdown('poke_a_yoke', $data, '0', 'class="form-control"');
-					echo br(1);
-					echo form_submit("contactSubmit", "Beräkna");
-					echo form_close();
+					if ($calc_result > 3.2) {
+						echo "According to these results the measured workstation require high cognitive load.";
+					} elseif ($calc_result >= 2.5 && $calc_result <= 3.2) {
+						echo "According to these results the measured workstation require moderate cognitive load.";
+					} elseif ($calc_result >= 1.7 && $calc_result <= 2.5) {
+						echo "According to these results the measured workstation require low cognitive load.";
+					} elseif ($calc_result >= 0 && $calc_result <= 1.7) {
+						echo "According to these results the measured workstation require very low cognitive load.";
+					}
 				?>
 			</div>
+		<?php  endif; ?>
+
+		<div class="col-md-12">
+			<h2>
+				<?php echo "Assessment"; ?>
+			</h2>
+			<p class="text-justify">
+				<?php echo $text2; ?>
+			</p>
+
+			<?php
+				echo form_open('site/calculate');
+				echo form_label("Saturation: ", "data");
+				echo "<p class='text-justify'>" . $saturation . "</p>";
+				echo '<div style="background-color:red;">' . form_error('saturation') . '</div>';
+				$data = array(
+					'' => 'Choose a value',
+					0 => 'L0 Not applicable',
+					1 => 'L1',
+					2 => 'L2 65% saturation or lower',
+					3 => 'L3',
+					4 => 'L4 65-75% saturation',
+					5 => 'L5',
+					6 => 'L6 75-85% saturation',
+					7 => 'L7',
+					8 => 'L8 86% saturation or higher'
+				);
+				echo form_dropdown('saturation', $data, set_value('saturation'), 'class="form-control"');
+
+				echo br(1);
+				echo form_label("Variant Flora: ", "data");
+				echo "<p class='text-justify'>" . $variant_flora . "</p>";
+				echo '<div style="background-color:red;">' . form_error('variant_flora') . '</div>';
+				$data = array(
+					'' => 'Choose a value',
+					0 => 'L0 No variant products.',
+					1 => 'L1',
+					2 => 'L2 Up to 10% variant products.',
+					3 => 'L3',
+					4 => 'L4 Up to 35% variant products.',
+					5 => 'L5',
+					6 => 'L6 Up to 50% variant products.',
+					7 => 'L7',
+					8 => 'L8 One piece production. Full variation.'				);
+				echo form_dropdown('variant_flora', $data, set_value('variant_flora'), 'class="form-control"');
+
+				echo br(1);
+				echo form_label("Level of difficulty: ", "data");
+				echo "<p class='text-justify'>" . $lvl_of_difficulty . "</p>";
+				echo '<div style="background-color:red;">' . form_error('lvl_of_difficulty') . '</div>';
+				$data = array(
+					'' => 'Choose a value',
+					0 => 'L0 Not applicable',
+					1 => 'L1',
+					2 => 'L2 The task requires little to no training and is recommended for newly employed personnel.',
+					3 => 'L3',
+					4 => 'L4 The task is quite simple with little training required.',
+					5 => 'L5',
+					6 => 'L6 The task is slightly complex and requires moderate training and experience.',
+					7 => 'L7',
+					8 => 'L8 The task is very difficult and requires significant training and experience.'
+				);
+				echo form_dropdown('lvl_of_difficulty', $data, set_value('lvl_of_difficulty'), 'class="form-control"');
+
+				echo br(1);
+				echo form_label("Difficulty to use tool: ", "data");
+				echo "<p class='text-justify'>" . $difficulty_of_use . "</p>";
+				echo '<div style="background-color:red;">' . form_error('difficulty_of_use') . '</div>';
+				$data = array(
+					'' => 'Choose a value',
+					0 => 'L0 No tool use',
+					1 => 'L1',
+					2 => 'L2 The assembly task is performed mostly by hand and requires little or very simple tool use.',
+					3 => 'L3',
+					4 => 'L4 The assembly task contains little to moderate tool use',
+					5 => 'L5',
+					6 => 'L6 The assembly task contains moderate to heavy tool use.',
+					7 => 'L7',
+					8 => 'L8 The assembly task requires complex tools/tool use and/or special tools to perform'
+				);
+				echo form_dropdown('difficulty_of_use', $data, set_value('difficulty_of_use'), 'class="form-control"');
+
+				echo br(1);
+				echo form_label("Production awareness: ", "data");
+				echo "<p class='text-justify'>" . $production_awareness . "</p>";
+				echo '<div style="background-color:red;">' . form_error('production_awareness') . "</div>";
+				$data = array(
+					'' => 'Choose a value',
+					0 => 'L0 Not applicable',
+					1 => 'L1',
+					2 => 'L2 The assembly task is done purely out of routine and the sequence seldom changes.',
+					3 => 'L3',
+					4 => 'L4 The assembly task is mostly done on routine but deviant parts or assemblies do occur.',
+					5 => 'L5',
+					6 => 'L6 The assembly task is quite variable but still contains much routine work.',
+					7 => 'L7',
+					8 => 'L8 The assembly task is highly variable and contains little to very little routine work.'
+				);
+				echo form_dropdown('production_awareness', $data, set_value('production_awareness'), 'class="form-control"');
+
+				echo br(1);
+				echo form_label("Number of tools: ", "data");
+				echo "<p class='text-justify'>" . $num_of_tools . "</p>";
+				echo '<div style="background-color:red;">' . form_error('num_of_tools') . "</div>";
+				$data = array(
+					'' => 'Choose a value',
+					0 => 'L0 No tools used',
+					1 => 'L1',
+					2 => 'L2 1 to 5 tools and easily identified',
+					3 => 'L3',
+					4 => 'L4 More than 5 tools and easily identified',
+					5 => 'L5',
+					6 => 'L6 5-8 tools and not easily identified',
+					7 => 'L7',
+					8 => 'L8 More than 8 tools'
+				);
+				echo form_dropdown('num_of_tools', $data, set_value('num_of_tools'), 'class="form-control"');
+
+				echo br(1);
+				echo form_label("Mapping of workstation: ", "data");
+				echo "<p class='text-justify'>" . $mapping_of_workstation . "</p>";
+				echo '<div style="background-color:red;">' . form_error('mapping_of_workstation') . "</div>";
+				$data = array(
+					'' => 'Choose a value',
+					0 => 'L0 Not applicable/the worker is free to set up the workstation and all its components to their own preferences.',
+					1 => 'L1',
+					2 => 'L2 Workstation layout heavily corresponds to assembly sequence.',
+					3 => 'L3',
+					4 => 'L4 Workstation layout completely corresponds to assembly sequence.',
+					5 => 'L5',
+					6 => 'L6 Workstation layout somewhat corresponds to assembly sequence.',
+					7 => 'L7',
+					8 => 'L8 Workstation layout does not correspond to assembly sequence.'
+				);
+				echo form_dropdown('mapping_of_workstation', $data, set_value('mapping_of_workstation'), 'class="form-control"');
+
+				echo br(1);
+				echo form_label("Parts identification: ", "data");
+				echo "<p class='text-justify'>" . $parts_ident . "</p>";
+				echo '<div style="background-color:red;">' . form_error('parts_ident') . "</div>";
+				$data = array(
+					'' => 'Choose a value',
+					0 => 'L0 Not applicable',
+					1 => 'L1',
+					2 => 'L2 Sequenced kits or kanban is used for most items.',
+					3 => 'L3',
+					4 => 'L4 Unsequenced kits or kanban is used for most items.',
+					5 => 'L5',
+					6 => 'L6 Parts identification through symbol syntax.',
+					7 => 'L7',
+					8 => 'L8 Parts identification through article numbers.'
+				);
+				echo form_dropdown('parts_ident', $data, set_value('parts_ident'), 'class="form-control"');
+
+				echo br(1);
+				echo form_label("Information cost: ", "data");
+				echo "<p class='text-justify'>" . $info_cost . "</p>";
+				echo '<div style="background-color:red;">' . form_error('info_cost') . "</div>";
+				$data = array(
+					'' => 'Choose a value',
+					0 => 'L0 Not applicable',
+					1 => 'L1',
+					2 => 'L2 Information is not required for standard operations.',
+					3 => 'L3',
+					4 => 'L4 Information is easily accessible without significant physical or cognitive effort.',
+					5 => 'L5',
+					6 => 'L6 Information is accessible through minor cognitive or physical effort (max 1 meter).',
+					7 => 'L7',
+					8 => 'L8 Significant movement or actions are required for information access.'
+				);
+				echo form_dropdown('info_cost', $data, set_value('info_cost'), 'class="form-control"');
+
+				echo br(1);
+				echo form_label("Quality of instructions: ", "data");
+				echo "<p class='text-justify'>" . $quality_of_instructions . "</p>";
+				echo '<div style="background-color:red;">' . form_error('quality_of_instructions') . "</div>";
+				$data = array(
+					'' => 'Choose a value',
+					0 => 'L0 No instructions required',
+					1 => 'L1',
+					2 => 'L2 Information is not required for standard operations.',
+					3 => 'L3',
+					4 => 'L4 Assembly sequences are separated and contains mostly relevant information',
+					5 => 'L5',
+					6 => 'L6 Assembly sequences are not clearly separated and visibility OR readability is diminished.',
+					7 => 'L7',
+					8 => 'L8 Instruction is filled with non priority information. Visibility AND readability is diminished.'
+				);
+				echo form_dropdown('quality_of_instructions', $data, set_value('quality_of_instructions'), 'class="form-control"');
+
+				echo br(1);
+				echo form_label("Poke-a-yoke: ", "data");
+				echo "<p class='text-justify'>" . $poke_a_yoke . "</p>";
+				echo '<div style="background-color:red;">' . form_error('poke_a_yoke') . "</div>";
+				$data = array(
+					'' => 'Choose a value',
+					0 => 'L0 Assembly errors cannot be made due to the design and fit of the product.',
+					1 => 'L1',
+					2 => 'L2 Assembly errors can barely be made due to the design and fit of the product.',
+					3 => 'L3',
+					4 => 'L4 Assembly constraints are present in most of the assembly sequence.',
+					5 => 'L5',
+					6 => 'L6 Assembly constraints are present but not throughout the assembly sequence.',
+					7 => 'L7',
+					8 => 'L8 No poke-a-yoke solutions are implemented in the task.'
+				);
+				echo form_dropdown('poke_a_yoke', $data, set_value('poke_a_yoke'), 'class="form-control"');
+
+				echo br(1);
+				echo form_submit("contactSubmit", "Beräkna");
+				echo form_close();
+			?>
 		</div>
+	</div>
+</div>
