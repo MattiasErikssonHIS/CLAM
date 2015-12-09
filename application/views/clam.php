@@ -955,28 +955,26 @@
 </div>
 
 <div class="container">
-	<div class="row">
-		<?php
-			foreach ($results as $row)
-			{
-				$title = $row->title;
-				$text2 = $row->text2;
-				$saturation = $row->saturation;
-				$variant_flora = $row->variant_flora;
-				$lvl_of_difficulty = $row->lvl_of_difficulty;
-				$difficulty_of_use = $row->difficulty_of_use;
-				$production_awareness = $row->production_awareness;
-				$num_of_tools = $row->num_of_tools;
-				$mapping_of_workstation = $row->mapping_of_workstation;
-				$parts_ident = $row->parts_ident;
-				$info_cost = $row->info_cost;
-				$quality_of_instructions = $row->quality_of_instructions;
-				$poke_a_yoke = $row->poke_a_yoke;
-			}
+	<?php
+		foreach ($results as $row)
+		{
+			$title = $row->title;
+			$text2 = $row->text2;
+			$saturation = $row->saturation;
+			$variant_flora = $row->variant_flora;
+			$lvl_of_difficulty = $row->lvl_of_difficulty;
+			$difficulty_of_use = $row->difficulty_of_use;
+			$production_awareness = $row->production_awareness;
+			$num_of_tools = $row->num_of_tools;
+			$mapping_of_workstation = $row->mapping_of_workstation;
+			$parts_ident = $row->parts_ident;
+			$info_cost = $row->info_cost;
+			$quality_of_instructions = $row->quality_of_instructions;
+			$poke_a_yoke = $row->poke_a_yoke;
+		}
 
-			$this->load->helper("form");
-		?>
-	</div>
+		$this->load->helper("form");
+	?>
 	<div class="form-group">
 		<?php if (isset($calc_result)): ?>
 			<div class="well">
@@ -1009,9 +1007,8 @@
 
 			<?php
 				echo form_open('site/calculate');
-				echo form_label("Saturation: ", "data");
 			?>
-				<button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#myModal1">Saturation</button>
+				<button type="button" class="btn btn-default btn-sm btn-block" data-toggle="modal" data-target="#myModal1">Saturation</button>
 			<?php
 
 				echo "<p class='text-justify'>" . $saturation . "</p>";
@@ -1031,9 +1028,8 @@
 				echo form_dropdown('saturation', $data, set_value('saturation'), 'class="form-control"');
 
 				echo br(1);
-				echo form_label("Variant Flora: ", "data");
 			?>
-				<button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#myModal2">Variant Flora</button>
+				<button type="button" class="btn btn-default btn-sm btn-block" data-toggle="modal" data-target="#myModal2">Variant Flora</button>
 			<?php
 				echo "<p class='text-justify'>" . $variant_flora . "</p>";
 				echo '<div style="background-color:#e54444;">' . form_error('variant_flora') . '</div>';
@@ -1047,13 +1043,13 @@
 					5 => 'L5',
 					6 => 'L6 Up to 50% variant products.',
 					7 => 'L7',
-					8 => 'L8 One piece production. Full variation.'				);
+					8 => 'L8 One piece production. Full variation.'
+				);
 				echo form_dropdown('variant_flora', $data, set_value('variant_flora'), 'class="form-control"');
 
 				echo br(1);
-				echo form_label("Level of difficulty: ", "data");
 			?>
-				<button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#myModal3">Level of difficulty</button>
+				<button type="button" class="btn btn-default btn-sm btn-block" data-toggle="modal" data-target="#myModal3">Level of difficulty</button>
 			<?php
 				echo "<p class='text-justify'>" . $lvl_of_difficulty . "</p>";
 				echo '<div style="background-color:#e54444;">' . form_error('lvl_of_difficulty') . '</div>';
@@ -1072,9 +1068,8 @@
 				echo form_dropdown('lvl_of_difficulty', $data, set_value('lvl_of_difficulty'), 'class="form-control"');
 
 				echo br(1);
-				echo form_label("Difficulty to use tool: ", "data");
 			?>
-				<button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#myModal4">Difficulty to use tool</button>
+				<button type="button" class="btn btn-default btn-sm btn-block" data-toggle="modal" data-target="#myModal4">Difficulty to use tool</button>
 			<?php
 				echo "<p class='text-justify'>" . $difficulty_of_use . "</p>";
 				echo '<div style="background-color:#e54444;">' . form_error('difficulty_of_use') . '</div>';
@@ -1093,9 +1088,8 @@
 				echo form_dropdown('difficulty_of_use', $data, set_value('difficulty_of_use'), 'class="form-control"');
 
 				echo br(1);
-				echo form_label("Production awareness: ", "data");
 			?>
-				<button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#myModal5">Production awareness</button>
+				<button type="button" class="btn btn-default btn-sm btn-block" data-toggle="modal" data-target="#myModal5">Production awareness</button>
 			<?php
 				echo "<p class='text-justify'>" . $production_awareness . "</p>";
 				echo '<div style="background-color:#e54444;">' . form_error('production_awareness') . "</div>";
@@ -1114,9 +1108,8 @@
 				echo form_dropdown('production_awareness', $data, set_value('production_awareness'), 'class="form-control"');
 
 				echo br(1);
-				echo form_label("Number of tools: ", "data");
 			?>
-				<button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#myModal6">Number of tools</button>
+				<button type="button" class="btn btn-default btn-sm btn-block" data-toggle="modal" data-target="#myModal6">Number of tools</button>
 			<?php
 				echo "<p class='text-justify'>" . $num_of_tools . "</p>";
 				echo '<div style="background-color:#e54444;">' . form_error('num_of_tools') . "</div>";
@@ -1135,9 +1128,8 @@
 				echo form_dropdown('num_of_tools', $data, set_value('num_of_tools'), 'class="form-control"');
 
 				echo br(1);
-				echo form_label("Mapping of workstation: ", "data");
 			?>
-				<button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#myModal7">Mapping of workstation</button>
+				<button type="button" class="btn btn-default btn-sm btn-block" data-toggle="modal" data-target="#myModal7">Mapping of workstation</button>
 			<?php
 				echo "<p class='text-justify'>" . $mapping_of_workstation . "</p>";
 				echo '<div style="background-color:#e54444;">' . form_error('mapping_of_workstation') . "</div>";
@@ -1156,9 +1148,8 @@
 				echo form_dropdown('mapping_of_workstation', $data, set_value('mapping_of_workstation'), 'class="form-control"');
 
 				echo br(1);
-				echo form_label("Parts identification: ", "data");
 			?>
-				<button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#myModal8">Parts identification</button>
+				<button type="button" class="btn btn-default btn-sm btn-block" data-toggle="modal" data-target="#myModal8">Parts identification</button>
 			<?php
 				echo "<p class='text-justify'>" . $parts_ident . "</p>";
 				echo '<div style="background-color:#e54444;">' . form_error('parts_ident') . "</div>";
@@ -1177,9 +1168,8 @@
 				echo form_dropdown('parts_ident', $data, set_value('parts_ident'), 'class="form-control"');
 
 				echo br(1);
-				echo form_label("Information cost: ", "data");
 			?>
-				<button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#myModal9">Information cost</button>
+				<button type="button" class="btn btn-default btn-sm btn-block" data-toggle="modal" data-target="#myModal9">Information cost</button>
 			<?php
 				echo "<p class='text-justify'>" . $info_cost . "</p>";
 				echo '<div style="background-color:#e54444;">' . form_error('info_cost') . "</div>";
@@ -1198,9 +1188,8 @@
 				echo form_dropdown('info_cost', $data, set_value('info_cost'), 'class="form-control"');
 
 				echo br(1);
-				echo form_label("Quality of instructions: ", "data");
 			?>
-				<button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#myModal10">Quality of instructions</button>
+				<button type="button" class="btn btn-default btn-sm btn-block" data-toggle="modal" data-target="#myModal10">Quality of instructions</button>
 			<?php
 				echo "<p class='text-justify'>" . $quality_of_instructions . "</p>";
 				echo '<div style="background-color:#e54444;">' . form_error('quality_of_instructions') . "</div>";
@@ -1219,9 +1208,8 @@
 				echo form_dropdown('quality_of_instructions', $data, set_value('quality_of_instructions'), 'class="form-control"');
 
 				echo br(1);
-				echo form_label("Poke-a-yoke: ", "data");
 			?>
-				<button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#myModal11">Poke-a-yoke</button>
+				<button type="button" class="btn btn-default btn-sm btn-block" data-toggle="modal" data-target="#myModal11">Poke-a-yoke</button>
 			<?php
 				echo "<p class='text-justify'>" . $poke_a_yoke . "</p>";
 				echo '<div style="background-color:#e54444;">' . form_error('poke_a_yoke') . "</div>";
