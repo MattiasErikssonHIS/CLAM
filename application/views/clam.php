@@ -532,16 +532,32 @@
 			</p>
 
 			<p>
-				There are five primary 5S phases: They can be translated from the Japanese as "sort", "straighten", "shine", "standardize", and "sustain". Other translations are possible. A selection of the factor relevant issues from 5S are:
+				There are five primary 5S phases:
+			</p>
+			<p>
+				They can be translated from the Japanese as "sort", "straighten", "shine", "standardize", and "sustain". Other translations are possible.
+			</p>
+			<p>
+				A selection of the factor relevant issues from 5S are:
 			</p>
 
-			<p>
-				Remove unnecessary items and dispose of them properly.
-				Arrange all necessary items in order so they can be easily picked for use.
-				Make it easy to find and pick up necessary items.
-				Maintain everything in order and according to its standard.
-				Everything in its right place.
-			</p>
+			<ul>
+				<li>
+					Remove unnecessary items and dispose of them properly.
+				</li>
+				<li>
+					Arrange all necessary items in order so they can be easily picked for use.
+				</li>
+				<li>
+					Make it easy to find and pick up necessary items.
+				</li>
+				<li>
+					Maintain everything in order and according to its standard.
+				</li>
+				<li>
+					Everything in its right place.
+				</li>
+			</ul>
 
 			<p>
 				In a mixed mode flow, naturally it is impossible for the workstation layout to correspond completely to the assembly sequence. In this case, the assessment should be at L4 or higher.
