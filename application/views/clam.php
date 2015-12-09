@@ -1008,7 +1008,7 @@
 			<?php
 				echo form_open('site/calculate');
 			?>
-				<button type="button" class="btn btn-default btn-sm btn-block" data-toggle="modal" data-target="#myModal1">Saturation</button>
+				<button type="button" class="btn btn-default btn-sm btn-block btn-success" data-toggle="modal" data-target="#myModal1">Saturation</button>
 			<?php
 
 				echo "<p class='text-justify'>" . $saturation . "</p>";
@@ -1029,7 +1029,7 @@
 
 				echo br(1);
 			?>
-				<button type="button" class="btn btn-default btn-sm btn-block" data-toggle="modal" data-target="#myModal2">Variant Flora</button>
+				<button type="button" class="btn btn-default btn-sm btn-block btn-success" data-toggle="modal" data-target="#myModal2">Variant Flora</button>
 			<?php
 				echo "<p class='text-justify'>" . $variant_flora . "</p>";
 				echo '<div style="background-color:#e54444;">' . form_error('variant_flora') . '</div>';
@@ -1049,7 +1049,7 @@
 
 				echo br(1);
 			?>
-				<button type="button" class="btn btn-default btn-sm btn-block" data-toggle="modal" data-target="#myModal3">Level of difficulty</button>
+				<button type="button" class="btn btn-default btn-sm btn-block btn-success" data-toggle="modal" data-target="#myModal3">Level of difficulty</button>
 			<?php
 				echo "<p class='text-justify'>" . $lvl_of_difficulty . "</p>";
 				echo '<div style="background-color:#e54444;">' . form_error('lvl_of_difficulty') . '</div>';
@@ -1069,7 +1069,7 @@
 
 				echo br(1);
 			?>
-				<button type="button" class="btn btn-default btn-sm btn-block" data-toggle="modal" data-target="#myModal4">Difficulty to use tool</button>
+				<button type="button" class="btn btn-default btn-sm btn-block btn-success" data-toggle="modal" data-target="#myModal4">Difficulty to use tool</button>
 			<?php
 				echo "<p class='text-justify'>" . $difficulty_of_use . "</p>";
 				echo '<div style="background-color:#e54444;">' . form_error('difficulty_of_use') . '</div>';
@@ -1089,7 +1089,7 @@
 
 				echo br(1);
 			?>
-				<button type="button" class="btn btn-default btn-sm btn-block" data-toggle="modal" data-target="#myModal5">Production awareness</button>
+				<button type="button" class="btn btn-default btn-sm btn-block btn-success" data-toggle="modal" data-target="#myModal5">Production awareness</button>
 			<?php
 				echo "<p class='text-justify'>" . $production_awareness . "</p>";
 				echo '<div style="background-color:#e54444;">' . form_error('production_awareness') . "</div>";
@@ -1109,7 +1109,7 @@
 
 				echo br(1);
 			?>
-				<button type="button" class="btn btn-default btn-sm btn-block" data-toggle="modal" data-target="#myModal6">Number of tools</button>
+				<button type="button" class="btn btn-default btn-sm btn-block btn-success" data-toggle="modal" data-target="#myModal6">Number of tools</button>
 			<?php
 				echo "<p class='text-justify'>" . $num_of_tools . "</p>";
 				echo '<div style="background-color:#e54444;">' . form_error('num_of_tools') . "</div>";
@@ -1129,7 +1129,7 @@
 
 				echo br(1);
 			?>
-				<button type="button" class="btn btn-default btn-sm btn-block" data-toggle="modal" data-target="#myModal7">Mapping of workstation</button>
+				<button type="button" class="btn btn-default btn-sm btn-block btn-success" data-toggle="modal" data-target="#myModal7">Mapping of workstation</button>
 			<?php
 				echo "<p class='text-justify'>" . $mapping_of_workstation . "</p>";
 				echo '<div style="background-color:#e54444;">' . form_error('mapping_of_workstation') . "</div>";
@@ -1149,7 +1149,7 @@
 
 				echo br(1);
 			?>
-				<button type="button" class="btn btn-default btn-sm btn-block" data-toggle="modal" data-target="#myModal8">Parts identification</button>
+				<button type="button" class="btn btn-default btn-sm btn-block btn-success" data-toggle="modal" data-target="#myModal8">Parts identification</button>
 			<?php
 				echo "<p class='text-justify'>" . $parts_ident . "</p>";
 				echo '<div style="background-color:#e54444;">' . form_error('parts_ident') . "</div>";
@@ -1169,7 +1169,7 @@
 
 				echo br(1);
 			?>
-				<button type="button" class="btn btn-default btn-sm btn-block" data-toggle="modal" data-target="#myModal9">Information cost</button>
+				<button type="button" class="btn btn-default btn-sm btn-block btn-success" data-toggle="modal" data-target="#myModal9">Information cost</button>
 			<?php
 				echo "<p class='text-justify'>" . $info_cost . "</p>";
 				echo '<div style="background-color:#e54444;">' . form_error('info_cost') . "</div>";
@@ -1189,7 +1189,7 @@
 
 				echo br(1);
 			?>
-				<button type="button" class="btn btn-default btn-sm btn-block" data-toggle="modal" data-target="#myModal10">Quality of instructions</button>
+				<button type="button" class="btn btn-default btn-sm btn-block btn-success" data-toggle="modal" data-target="#myModal10">Quality of instructions</button>
 			<?php
 				echo "<p class='text-justify'>" . $quality_of_instructions . "</p>";
 				echo '<div style="background-color:#e54444;">' . form_error('quality_of_instructions') . "</div>";
@@ -1209,7 +1209,7 @@
 
 				echo br(1);
 			?>
-				<button type="button" class="btn btn-default btn-sm btn-block" data-toggle="modal" data-target="#myModal11">Poke-a-yoke</button>
+				<button type="button" class="btn btn-default btn-sm btn-block btn-success" data-toggle="modal" data-target="#myModal11">Poke-a-yoke</button>
 			<?php
 				echo "<p class='text-justify'>" . $poke_a_yoke . "</p>";
 				echo '<div style="background-color:#e54444;">' . form_error('poke_a_yoke') . "</div>";
