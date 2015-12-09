@@ -28,6 +28,16 @@ class Site extends CI_Controller {
 		$this->load->view('footer');
 	}
 
+	public function instructions()
+	{
+		$data['heading'] = 'Instructions';
+
+		$this->load->view('header', $data);
+		$this->load->view('nav');
+		$this->load->view('page1', $data);
+		$this->load->view('footer');
+	}
+
 	public function clam($result = null)
 	{
 		$data['message'] = "";
@@ -165,7 +175,7 @@ class Site extends CI_Controller {
 		}
 	}
 
-	public function instructions()
+	public function instructions_old()
 	{
 		$this->load->model('Database');
 

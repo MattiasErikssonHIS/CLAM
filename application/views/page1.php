@@ -1,17 +1,182 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
 
+<div class="row">
+	<div class="col-md-8">
+		<div class="container">
+			<a href="#introduction">Introduction</a>
+			<a href="#background">Background</a>
+			<a href="#assessment">Factor assessment</a>
 
-<!-- Modal -->
-<div id="myModal1" class="modal fade" role="dialog">
-	<div class="modal-dialog">
+			<h1>Instructions</h1>
+			<a name="introduction"></a>
+			<h2>Introduction To The Handbook</h2>
+			<p class="text-justify">
+				The overall purpose of the Cognitive Load Assessment for Manufacturing method (hereafter denoted CLAM) is to identify and assess the occurrence of cognitive load in manufacturing personnel, as well as educating and assisting manufacturing companies to reduce cognitive load in the personnel at the shop floor early on. The CLAM method has primarily been developed as a proactive approach for workstation design and evaluation. It is designed for quick assessment of cognitive load connected to tasks and workstation design. The motivation for this approach, focusing on identification of relevant issues pro-actively, may lead to effective and efficiently changes in the existing manufacturing environment. The overall goal with the CLAM method has been to make it cost efficient, taking a holistic perspective (both work task and workstation as a whole), saving time and resources in assessing cognitive load in manufacturing.
+			</p>
 
-	<!-- Modal content-->
-	<div class="modal-content">
-		<div class="modal-header">
-			<button type="button" class="close" data-dismiss="modal">&times;</button>
-			<h4 class="modal-title">Saturation</h4>
-		</div>
-		<div class="modal-body">
+			<p class="text-justify">
+				The CLAM method considers both assembly tasks and workstation layout/design for the assessment. By addressing and identifying cognitive load problems proactively, and designing the workstation and the assembly task properly, one avoids high cognitive load in the personnel. High cognitive load during pro-longed longer time-frames, may lead to inefficient work procedures, bad performance, high error rates, low acceptance as well as ergonomic and mental health symptoms in the personnel.
+			</p>
+
+			<p class="text-justify">
+				The method is designed to be used by non-experts, i.e. it will not require a researcher or anyone with any major knowledge of human cognition, cognitive psychology or human factors. This handbook is intended to make the method usable by different user roles, most usually engineers, production leaders and technicians. The CLAM handbook covers a brief overview to the human cognitive system in general and cognitive load in particular. Then it presents instructions on how to use the CLAM evaluation tool properly, how to interpret the results from the assessment, and finally it provides suggestions of how to reduce high cognitive load (when identified).
+			</p>
+
+			<h2>Overview: The Cognitive load Assessment for manufacturing Method</h2>
+
+			<p class="text-justify">
+				The CLAM handbook consists of several parts (see Figure 1):
+			</p>
+
+			<img src="bild">
+
+			<p class="text-justify">
+				Part A contains a background seaction, where underlying relevant theories of the human cognitive systems (strengths and limitations) and especially cognitive load are briefly presented. It is also stressed why it is important to consider these issues within manufacturing.
+			</p>
+
+			<p class="text-justify">
+				Part B consists of the application phase of the CLAM tool. It provides short descriptions and examples of the 12 (?) factors and how cognitive load is affected as well as how to assess each factor individually. This information is different from Part A since it focuses on describing how the 12 different factors could be observed in manufacturing and what they could result in. This part also contains the necessary material in order to apply the method by providing instructions for how to use the interactive assessment tool Put the training module here? Light version?
+			</p>
+
+			<p class="text-justify">
+				Part C concerns the result of the cognitive load assessment, which is a quantified score/summary of the 12 factors. This part provides to a larger extent guidance to the user how to interpret and understand a particular result. It offers explanations on why a particular score has been achieved and what it may mean to production output.
+			</p>
+
+			<p class="text-justify">
+				Part D concludes the cognitive load assessment with recommendations/improvements on how to proceed in order to minimize identified problems of high cognitive load, and thereby improving manufacturing. The recommendations/improvements are perhaps one of the most important parts of this handbook, since it is not sufficient to only assess the cognitive workload connected to a particular task, but also necessary give recommendations on actions if the cognitive workload is estimated too high. These recommendations are largely intertwined with the 12 individual factors and they will also discuss actions to take when a reduction of the cognitive workload is hard to accomplish.
+			</p>
+
+			<a name="background"></a>
+
+			<h2>Part B: Background</h2>
+
+			<h3>The human cognitive system and cognitive load</h3>
+
+			<p class="text-justify">
+				Technology either empowers or frustrates us, but the people designing the technology have the responsibility, and one should credit or blame the designer of the technology and not technology itself. Following the line of arguments put forward by Norman, already in 1996, our goal is to develop a human-centred view of the technologies of cognition. It is not an anti-technological approach, it is pro human. Taken together, technology should be considered as a resource in the creation of a better working environment, it should complement human abilities, aid those activities for which we are poorly suited cognitively, and enhance and help develop those cognitive skills for which we are ideally suited.
+			</p>
+
+			<h3>Characteristics of human cognition and cognitive load</h3>
+
+			<p class="text-justify">
+				Cognition has traditionally been described as mental activities that take place inside the human brain. More recent views emphasize the importance of the environment as well as the body of the cognitive creature as well as the interaction between these factors and the brain. Cognitive abilities enable the human being to experience the world and act in it. Perception, decision-making, problem solving, memory processes etcetera are all cognitive activities that human beings are engaged in every day. They are also cognitive activities that are depending on the cooperation of the body (e.g. the musculoskeletal system and peripheral nervous system) and sensory inputs from the environment as well as the workings of the brain.
+			</p>
+
+			<p class="text-justify">
+				The human cognition is comprehensive, but there are limitations. When exposed to stimuli the cognitive system experiences what is commonly referred to as cognitive load. Thus, cognitive load refers to the mental load that performing a specific task imposes on the human’s cognitive system. Perception, decision-making, problem solving, attention, memory processes et cetera are examples of cognitive activities that enable the human being to experience and act in the world. These cognitive processes are constantly processing information that indicates that human beings always experience some level of cognitive load. The level of cognitive load is constantly fluctuating as a response to the stimuli that the situation, the task, and demands are imposing on the human. This is naturally individually and depending on the individual´s experience and previous knowledge. While some situations make it possible for the individual to perceive and interpret the stimuli and the pattern of information and without an apparent effort generate an appropriate response, some other situations demand conscious awareness and reflection. This implies that some cognitive processes of an individual are more demanding than others.
+			</p>
+
+			<h3>Different modes of cognition</h3>
+
+			<p class="text-justify">
+				There are many modes of cognition, in which different kinds of thinking occur. Norman (1996), for example, describes two different types of cognition that are particularly relevant for the CLAM handbook. He denotes them as experiential and reflective cognition. Roughly speaking, experiential cognition is characterized by an automatic nature and the reactions to the situations appear to flow naturally. This is likely to be due to experience and perhaps years of training are required in order to achieve this. Norman (1996, pp. 23) explain this with the words: “Experiential thought is reactive, automatic thought, driven by the patterns of information arriving at our senses, but dependent upon a large reservoir of experience”.
+			</p>
+
+			<p class="text-justify">
+				The reflective mode, on the other hand, is about concepts, planning and reconsideration. Reflective cognition does often require external support (computational tools, writing et cetera) and also the aid of other people. Norman (1996, pp. 25) expresses: “Reflective though requires the ability to store temporary results, to make inferences from stored knowledge, and to follow chains of reasoning backward and forward, sometimes backtracking when a promising line of thought proves to be unfruitful. This process takes time.”
+			</p>
+
+			<p class="text-justify">
+				Similarly, Kahneman (2011) differentiates between the automatic operations of System 1 (which he generally refers to as ‘fast thinking’, which is similar to experiential cognition) and the controlled operations of System 2 (which he generally refers to as ‘slow thinking’, which is similar to reflective cognition). The process of demanding and effortful mental work is related to system 2 in which the demands of memory, attention and other aspects of performing non-automatic cognitive tasks actually put some constraints on the cognitive processes, resulting in a slower thinking process because of the limited available cognitive capacity, resulting in increased cognitive load.
+			</p>
+
+			<p class="text-justify">
+				Broadly stated, Kahneman (2011, p. 20-21) describes the two systems as follows:
+			</p>
+
+			<p class="text-justify">
+				“System 1 operates automatically and quickly, with little or no effort and no sense of voluntary control.
+				System 2 allocates attention to the effortful mental activities that demand it, including complex computations. The operations of System 2 are often associated with the subjective experience of agency, choice and concentration”.
+				Kahneman (2011) points out that some of our mental activities become fast and automatic because of prolonged practice, although they from the very beginning needed conscious attention, e.g., reading skills which normally runs on our automatic pilot in the skilled reader. The limited capacity for attention is the central pinnacle for cognitive load, and when acting beyond that limit, failure appears. The division of labour between the two systems is very efficient, it minimises effort and optimises performance, in most of the time. However, System 1 has some biases, and sometimes provides the wrong reaction and it cannot be turned off. This becomes obvious when there is a conflict between the two systems. One major task of System 2 is to overrule or provide a reflective and conscious “second opinion” of the automatic reactions of System 1. This is for instance common when perceiving so called optical illusions, like the Müller-Lyer illusion (see Figure 1).
+			</p>
+
+			<img src="figure1">
+
+			<p class="text-justify">
+				Although consciously knowing via System 2 that the two horizontal lines have the same length, the automatically reaction when visually perceiving the two lines via System 1, offers another answer that is hard to deny, namely that the lines seem to be of different length. Following this line of argument, humans sometimes suffer from cognitive illusions, i.e., illusions of thought, which are quite hard to detect and overcome. The reason is that System 1 operates automatically and cannot be switched off by choice, and biases cannot be avoided since System 2 has not received any hint that there might be an error. A promising way to overcome this bias is learning to recognise particular situations in which mistakes are likely to appear. Continuously questioning our thought processes via System 2 is not a viable approach, however, since it is impractical, too slow and has a limited capacity (Kahneman, 2011).
+			</p>
+
+			<p class="text-justify">
+				To sum up, the both modes of cognition; (1) System 1/Experiential cognition and (2) System 2/Reflective cognition are needed and neither is superior to the other, but they differ in requirements and function, as described earlier. It should be pointed out that they are essential for human cognition, although each mode requires different kinds of technical support to function properly. Figure 2 below display the two modes of cognition in the so called “cognitive iceberg” model and visualises that Experiential cognition/ System 1 are the mode that is less demanding, and has the largest capacity, while the Reflective mode/ System 2 requires a higher degree of awareness, has a limited capacity, and is the mode we usually assume is the place in which “thinking” actually occurs.
+			</p>
+
+			<p class="text-justify">
+				<em>Figure 2. The cognitive iceberg model, depicting the two different types of cognition – System 1/Experiential and System 2/Reflective cognition.</em>
+			</p>
+
+			<p class="text-justify">
+				However, these two modes of cognition do not cover the whole cognitive spectrum, but it makes it possible to highlight and compare certain characteristics of human cognition. In everyday life, we use a mix of these modes simultaneously, and the challenge when designing technology is to avoid forcing the use of technology towards one extreme or the other. That is, there is a need to have a proper balance between reflection and experiencing, so the human cognizer is not forced to use her/his limited conscious capacity to interpret the user interface as such, instead the human cognizer should use the cognitive capacity to solve the problem at hand or make appropriate decisions.
+			</p>
+
+			<p class="text-justify">
+				Human beings always experience some level of cognitive load, however this level can change depending on the situation, the tasks and their demands on the individual. For example: an assembly worker performing a manual assembly task is constantly exposed to situations with varying demands. Important aspects to consider concerning the level of cognitive load that the industrial worker can be experiencing is amount of information, time pressure, interruptions, rapid decisions, high variant flora of components and physical layout of workstations. These factors create a mental load primarily in combination with each other, where time pressure is assumed to be the triggering factor. Arguably, problems within most of the above factors can be handled with relative ease as long as there is no time pressure. Dealing with poor information design is for instance not a big problem unless the information has to be dealt with swiftly, as is the case in most industry applications.
+			</p>
+
+			<p class="text-justify">
+				Through studies in the industry, an interesting observation was made regarding the use of information [26, 27]. Often the assemblers were provided with too much information rather than the appropriate information, causing information overload for the assembler. Wilson [28] defines information overload as: 
+			</p>
+
+			<p class="text-justify">
+				“A perception on the part of the individual (or observers of that person) that the flow of information associated with work tasks is greater than can be managed effectively, and a perception that overload in this sense creates a degree of stress for which his or her coping strategies are ineffective”.
+			</p>
+
+			<p class="text-justify">
+				In a manual assembly environment, the problem with information overload is usually due to a combination of high demands on work rate and accuracy respectively, especially in the automotive industry. When the assembler is faced with too much information, the information overload turns into a stressful situation, which causes high cognitive load. Information overload is exemplified in figure 7, where the information on the plastic boards instructs the assembly personnel of what component variant to select and assemble.
+			</p>
+
+			<p class="text-justify">
+				<em>Figure 7. An example of too much information in one small area.</em>
+			</p>
+
+			<p class="text-justify">
+				Both too high cognitive load and information overload increase the risk for humans to err. Certain reasons why people make errors are we sometimes are forced to interact with technology, machines or instructions that are designed in ways that incompatible with our modes of cognition. The limited memory capacity is used for remembering details that make no sense to us or (it is easier to recognize than recall), having to focus our attention on static situations or very similarly appearing displays or rows, and lack of adequate feedback. Thus people make errors, and the overall aim is to design technology etc., in ways that we are cognitively suited to and offer situations that minimize errors and high cognitive load.
+			</p>
+
+			<a name="assessment"></a>
+			<h2>Part C: Factor assessment</h2>
+
+			<p class="text-justify">
+				Part C will describe all the relevant factors that affect cognitive load for the tool. The involved factors, along with a brief description and a suggestion for how the factor can be measured or quantified, are briefly presented below. Note that the unit of analysis is on the workstation level (including both the human and his/her working environment in the unit of analysis), including the tasks and the workstation design/layout. Each factor should thus be considered by their impact on each workstation, not individual tasks. These factors are accompanied by details and motivations of good and poor design according to the cognitive and design literature. The factors identified in the current version of the tool include both task- and workstation-related factors.
+			</p>
+			<div class="row">
+				<div class="col-md-12">
+					<ul>
+						<li>Task-based factors are:</li>
+						<li>1. Saturation</li>
+						<li>2. Variant flora</li>
+						<li>3. Level of difficulty</li>
+						<li>4. Difficulty of tool use</li>
+						<li>5. Production awareness</li>
+					</ul>
+				</div>
+				<div class="col-md-12">
+					<ul>
+						<li>Workstation factors are:</li>
+						<li>6. Number of tools available</li>
+						<li>7. Mapping of workstation</li>
+						<li>8. Parts identification</li>
+						<li>9. Information cost</li>
+						<li>10. Quality of instructions</li>
+						<li>11. Poke-a-yoke and constraints</li>
+					</ul>
+				</div>
+				<div class="col-md-12">
+					<p class="text-justify">
+						In the following, each factor will be described in more detail, as well as presenting examples of good and bad solutions/design of each factor, as a guiding principle for the assessment by the user.
+					</p>
+
+					<p class="text-justify">
+						As an outcome of using the CLAM for assessment, a scoring interval of cognitive load is developed, see figure 2, below.
+					</p>
+
+					<p class="text-justify">
+						The factor assessment is most easily conducted directly in your computer/smartphone/PDA. However, if you are unable to complete the assessment ”online”, away from the unit of assessment, it is possible to print the factor sheets, bring them to the shop floor for assessment, and then transfer the scores to the computer. The procedure for performing the assessment is based on the computer version of the tool.
+					</p>
+				</div>
+			</div>
+
+			<h2>Saturation</h2>
+
 			<p class="text-justify">
 				The term ‘saturation’ refers to the amount of work that is planned on a workstation. For a simple example; consider a workstation within an assembly flow where the tact time is 100s. If this workstation has an occupancy of 92 seconds then the saturation is 92%.
 			</p>
@@ -34,29 +199,10 @@
 
 			<em>How to evaluate:</em>
 
-			<p class="text-justify">
-				Accurate time studies should be available in most SME's and larger organizations.
-			</p>
-		</div>
-		<div class="modal-footer">
-			<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-		</div>
-	</div>
+			<p class="text-justify">Accurate time studies should be available in most SME's and larger organizations.</p>
 
-	</div>
-</div>
+			<h2>Variant flora</h2>
 
-<!-- Modal -->
-<div id="myModal2" class="modal fade" role="dialog">
-	<div class="modal-dialog">
-
-	<!-- Modal content-->
-	<div class="modal-content">
-		<div class="modal-header">
-			<button type="button" class="close" data-dismiss="modal">&times;</button>
-			<h4 class="modal-title">Variant Flora</h4>
-		</div>
-		<div class="modal-body">
 			<p class="text-justify">
 				It is a well-documented fact that the variant flora does have significant effect on production efficiency and it can easily be argued that this effect relates to the cognitive workload of the worker (Thorvald, 2011). However, the concept of variant is only relevant in, more or less, one-piece production where there can also be said to be a volume product. In many manufacturing companies, one does not consider variant and volume products but different types of products are instead batched together.
 			</p>
@@ -80,26 +226,9 @@
 			<em>How to evaluate:</em>
 
 			<p class="text-justify">Assessment of what percentage of daily output is made up of variant products.</p>
-		</div>
-		<div class="modal-footer">
-			<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-		</div>
-	</div>
 
-	</div>
-</div>
+			<h2>Level of difficulty</h2>
 
-<!-- Modal -->
-<div id="myModal3" class="modal fade" role="dialog">
-	<div class="modal-dialog">
-
-	<!-- Modal content-->
-	<div class="modal-content">
-		<div class="modal-header">
-			<button type="button" class="close" data-dismiss="modal">&times;</button>
-			<h4 class="modal-title">Level of difficulty</h4>
-		</div>
-		<div class="modal-body">
 			<p class="text-justify">
 				The level of difficulty is a subjective assessment regarding the estimated difficulty that a workstation entails. To aid the evaluator in assessing this, the factor is heavily tied to the amount of time required to acquire the necessary training and skills needed for independent work. It is also very beneficial to gather opinions from blue-collar workers about the estimated level of difficulty at this workstation. As this factor is quite difficult to assess objectively, subjective opinions from both white and blue-collar workers is required.
 			</p>
@@ -172,26 +301,9 @@
 			<p>
 				If a workstation requires very little or no training for new personnel, then the lower levels of assessment should be chosen. If specific training and a small degree of monitoring is required, level two should be selected. For more moderate training and experience, level three should be selected and if the workstation requires significant amounts of expertise and experience is required, then the fourth level is recommended.
 			</p>
-		</div>
-		<div class="modal-footer">
-			<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-		</div>
-	</div>
 
-	</div>
-</div>
+			<h2>Difficulty of tool use</h2>
 
-<!-- Modal -->
-<div id="myModal4" class="modal fade" role="dialog">
-	<div class="modal-dialog">
-
-	<!-- Modal content-->
-	<div class="modal-content">
-		<div class="modal-header">
-			<button type="button" class="close" data-dismiss="modal">&times;</button>
-			<h4 class="modal-title">Difficulty of tool use</h4>
-		</div>
-		<div class="modal-body">
 			<p class="text-justify">
 				The difficulty of tool use is assessed station wide based on accessibility and operation of a tool and is also a very subjective assessment, very dependant on the experience of the evaluator. The factor focuses on both the amount of tool use required and also on the estimated complexity of said tool use. Furthermore, the factor includes all tool use, meaning that all work not done by hand or body manipulation is considered here. Also, the use of special tools or non-standard tools is highly relevant.
 			</p>
@@ -254,26 +366,9 @@
 					<td>No tool use</td>
 				</tr>
 			</table>
-		</div>
-		<div class="modal-footer">
-			<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-		</div>
-	</div>
 
-	</div>
-</div>
+			<h2>Production awareness</h2>
 
-<!-- Modal -->
-<div id="myModal5" class="modal fade" role="dialog">
-	<div class="modal-dialog">
-
-	<!-- Modal content-->
-	<div class="modal-content">
-		<div class="modal-header">
-			<button type="button" class="close" data-dismiss="modal">&times;</button>
-			<h4 class="modal-title">Production awareness</h4>
-		</div>
-		<div class="modal-body">
 			<p class="text-justify">
 				The attention resources of humans are very limited and thus must be considered when designing for cognitive work. This factor is focused on the amount of focused or active attention that is associated with a task through the estimation of variability of work. Note that this does is not limited to the presence of variant products but is also dependant on station times and the longevity of the tasks performed. Fastening of dozens of bolts within the same task should be considered routine work even though the bolts might not be of the same type.
 			</p>
@@ -350,26 +445,10 @@
 				Does the task require complex or non-standard tools where specific training is required?
 				Finally, try also and consider the training time normally associated with the task as this might give you a clue to the level of difficulty associated with tool use.
 			</p>
-		</div>
-		<div class="modal-footer">
-			<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-		</div>
-	</div>
 
-	</div>
-</div>
 
-<!-- Modal -->
-<div id="myModal6" class="modal fade" role="dialog">
-	<div class="modal-dialog">
+			<h2>Number of tools available</h2>
 
-	<!-- Modal content-->
-	<div class="modal-content">
-		<div class="modal-header">
-			<button type="button" class="close" data-dismiss="modal">&times;</button>
-			<h4 class="modal-title">Number of tools available</h4>
-		</div>
-		<div class="modal-body">
 			<p class="text-justify">
 				A simple metric describing the number of tools used during normal work at a workstation.
 			</p>
@@ -442,26 +521,9 @@
 			<p>
 				To understand the concept, consider learning to drive. When you are learning, this task is very focused and often requires significant attention resources, but when learned, it is done automatically, on routine. Tasks that do not differ from each other are soon automatized and do not require much attention resources whereas tasks that do differ (e.g. due to variant flora or poor information design) require much attention resources. If large amounts of the work can be done by routine where the same work is repeated, the assessment should be in the lower levels whereas if focused attention is required to find information, identify product variants or find tools and material, the assessment should be in the higher levels.
 			</p>
-		</div>
-		<div class="modal-footer">
-			<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-		</div>
-	</div>
 
-	</div>
-</div>
+			<h2>Mapping of workstation</h2>
 
-<!-- Modal -->
-<div id="myModal7" class="modal fade" role="dialog">
-	<div class="modal-dialog">
-
-	<!-- Modal content-->
-	<div class="modal-content">
-		<div class="modal-header">
-			<button type="button" class="close" data-dismiss="modal">&times;</button>
-			<h4 class="modal-title">Mapping of workstation</h4>
-		</div>
-		<div class="modal-body">
 			<p class="text-justify">
 				An assessment of how well the workstation design complies with the assembly sequence. For instance, tools and parts that are used together should be placed together and in the correct order.
 			</p>
@@ -546,26 +608,9 @@
 			<p>
 				In a mixed mode flow, naturally it is impossible for the workstation layout to correspond completely to the assembly sequence. In this case, the assessment should be at L4 or higher.
 			</p>
-		</div>
-		<div class="modal-footer">
-			<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-		</div>
-	</div>
 
-	</div>
-</div>
+			<h2>Parts identification</h2>
 
-<!-- Modal -->
-<div id="myModal8" class="modal fade" role="dialog">
-	<div class="modal-dialog">
-
-	<!-- Modal content-->
-	<div class="modal-content">
-		<div class="modal-header">
-			<button type="button" class="close" data-dismiss="modal">&times;</button>
-			<h4 class="modal-title">Parts identification</h4>
-		</div>
-		<div class="modal-body">
 			<p class="text-justify">
 				Different types of part identification systems are more or less adapted to human use. The use of article numbers, for instance, has many benefits when used in computer systems as they are easily discriminated from each other and they are infinitely combinable. However, for human workers, they pose many challenges as their information value is limited at best. Lately, other types of parts identification and material supply solutions such as different types of kitting ands sequencing of material.
 			</p>
@@ -638,26 +683,9 @@
 			<p>
 				For L3, parts identification is done with some syntax that carries semantic content. For instance, using symbols or colours instead of random numbers has been shown to be beneficial to human cognitive processing. Even though the symbols or colours are not connected to the part they are referring to, the mere usage of recognizable syntax that has any meaning to the human is beneficial and easier to recognize and remember. L4 is reserved for cases where parts identification codes are randomly generated, such as in the case of most (but not all) article numbers, in numbers or letters that have no meaning to the worker.
 			</p>
-		</div>
-		<div class="modal-footer">
-			<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-		</div>
-	</div>
 
-	</div>
-</div>
+			<h2>Information cost</h2>
 
-<!-- Modal -->
-<div id="myModal9" class="modal fade" role="dialog">
-	<div class="modal-dialog">
-
-	<!-- Modal content-->
-	<div class="modal-content">
-		<div class="modal-header">
-			<button type="button" class="close" data-dismiss="modal">&times;</button>
-			<h4 class="modal-title">Information cost</h4>
-		</div>
-		<div class="modal-body">
 			<p class="text-justify">
 				The cost of information is described as an assessment of how much physical or cognitive effort that is required to utilize the information (Thorvald, 2011).
 				It has been both argued and empirically confirmed that the cost of gathering information has great impact on the actor’s proneness to do it. Most likely, actors value the information that they believe is to be gathered from experience and make an internal cost-benefit calculation to see if the information should be gathered or if there is room for a “gamble” (i.e. making an experienced assumption on what the information contains). The factors that affect this calculation are the following:
@@ -738,26 +766,9 @@
 			<p>
 				An academic experiment, set up to mimic truck assembly showed as much as a 50% reduction in quality defects when using a mobile, handheld information unit as opposed to a computer terminal situated about 2-3m away. Workers were more inclined to attend the information in the mobile unit since it was always at arms length. They were also more inclined to go back and look a second and third time to avoid having to keep all information in their memory.
 			</p>
-		</div>
-		<div class="modal-footer">
-			<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-		</div>
-	</div>
 
-	</div>
-</div>
+			<h2>Quality of instruction</h2>
 
-<!-- Modal -->
-<div id="myModal10" class="modal fade" role="dialog">
-	<div class="modal-dialog">
-
-	<!-- Modal content-->
-	<div class="modal-content">
-		<div class="modal-header">
-			<button type="button" class="close" data-dismiss="modal">&times;</button>
-			<h4 class="modal-title">Quality of instruction</h4>
-		</div>
-		<div class="modal-body">
 			<p class="text-justify">
 				An assessment of the general quality of the instructions used to gather information about the work. There exist a lot of guidelines within the Human-Computer Interaction (HCI) area for instructions, see, e.g., Clark et al.’s (2006) evidence-based guidelines to manage cognitive load, Black et al.’s (1987) work on minimal instruction manuals, Carroll et al.’s (1988) minimal manuals, and Eiriksdottir and Catrambone’s (2011) procedural instructions, principles, and examples, to mention but a few.
 			</p>
@@ -864,26 +875,9 @@
 			<p>
 				Below is an example of quite poor instruction design. There are several different emphasis used; underlined, italics, and bold lettering. The line spacing is very varied and it is quite difficult to discriminate actual tasks from random information, not relevant to the workers.
 			</p>
-		</div>
-		<div class="modal-footer">
-			<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-		</div>
-	</div>
 
-	</div>
-</div>
+			<h2>Poke-a-yoke and constraints</h2>
 
-<!-- Modal -->
-<div id="myModal11" class="modal fade" role="dialog">
-	<div class="modal-dialog">
-
-	<!-- Modal content-->
-	<div class="modal-content">
-		<div class="modal-header">
-			<button type="button" class="close" data-dismiss="modal">&times;</button>
-			<h4 class="modal-title">Poke-a-yoke and constraints</h4>
-		</div>
-		<div class="modal-body">
 			<p class="text-justify">
 				Poke-a-yoke is a Japanese term that means "mistake-proofing". A poke-a-yoke is any mechanism in a lean manufacturing process that helps an equipment operator avoid (yokeru) mistakes (poka). Its purpose is to eliminate product defects by preventing, correcting, or drawing attention to human errors as they occur. Forcing functions - A forcing function is an aspect of a design that prevents the user from taking an action without consciously considering information relevant to that action.
 			</p>
@@ -929,304 +923,12 @@
 					Checklists – reminding workers to perform specific actions.
 				</li>
 			</ul>
-		</div>
-		<div class="modal-footer">
-			<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-		</div>
-	</div>
 
-	</div>
-</div>
+			<h2>Assessment of results</h2>
 
-<div class="container">
-	<div class="row">
-		<?php
-			foreach ($results as $row)
-			{
-				$title = $row->title;
-				$text2 = $row->text2;
-				$saturation = $row->saturation;
-				$variant_flora = $row->variant_flora;
-				$lvl_of_difficulty = $row->lvl_of_difficulty;
-				$difficulty_of_use = $row->difficulty_of_use;
-				$production_awareness = $row->production_awareness;
-				$num_of_tools = $row->num_of_tools;
-				$mapping_of_workstation = $row->mapping_of_workstation;
-				$parts_ident = $row->parts_ident;
-				$info_cost = $row->info_cost;
-				$quality_of_instructions = $row->quality_of_instructions;
-				$poke_a_yoke = $row->poke_a_yoke;
-			}
-
-			$this->load->helper("form");
-		?>
-	</div>
-	<div class="form-group">
-		<?php if (isset($calc_result)): ?>
-			<div class="well">
-				<?php
-					echo "Your result is a value of " . $calc_result;
-					echo br(2);
-
-					if ($calc_result > 3.2) {
-						echo "According to these results the measured workstation require high cognitive load.";
-					} elseif ($calc_result >= 2.5 && $calc_result <= 3.2) {
-						echo "According to these results the measured workstation require moderate cognitive load.";
-					} elseif ($calc_result >= 1.7 && $calc_result <= 2.5) {
-						echo "According to these results the measured workstation require low cognitive load.";
-					} elseif ($calc_result >= 0 && $calc_result <= 1.7) {
-						echo "According to these results the measured workstation require very low cognitive load.";
-					}
-				?>
-			</div>
-		<?php  endif; ?>
-
-		<div class="col-md-12">
-			<h2>
-				<?php echo "Assessment"; ?>
-			</h2>
-			<p class="text-justify">
-				<?php echo $text2; ?>
+			<p>
+				When all factors have been analysed and a level has been picked for each of them, the user navigates to the results page and is shown the collected data and a consolidation of the factors according to the weights discussed earlier (Figure11).
 			</p>
-
-			<!-- Trigger the modal with a button -->
-
-			<?php
-				echo form_open('site/calculate');
-				echo form_label("Saturation: ", "data");
-			?>
-				<button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#myModal1">Saturation</button>
-			<?php
-
-				echo "<p class='text-justify'>" . $saturation . "</p>";
-				echo '<div style="background-color:#e54444;">' . form_error('saturation') . '</div>';
-				$data = array(
-					'' => 'Choose a value',
-					0 => 'L0 Not applicable',
-					1 => 'L1',
-					2 => 'L2 65% saturation or lower',
-					3 => 'L3',
-					4 => 'L4 65-75% saturation',
-					5 => 'L5',
-					6 => 'L6 75-85% saturation',
-					7 => 'L7',
-					8 => 'L8 86% saturation or higher'
-				);
-				echo form_dropdown('saturation', $data, set_value('saturation'), 'class="form-control"');
-
-				echo br(1);
-				echo form_label("Variant Flora: ", "data");
-			?>
-				<button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#myModal2">Variant Flora</button>
-			<?php
-				echo "<p class='text-justify'>" . $variant_flora . "</p>";
-				echo '<div style="background-color:#e54444;">' . form_error('variant_flora') . '</div>';
-				$data = array(
-					'' => 'Choose a value',
-					0 => 'L0 No variant products.',
-					1 => 'L1',
-					2 => 'L2 Up to 10% variant products.',
-					3 => 'L3',
-					4 => 'L4 Up to 35% variant products.',
-					5 => 'L5',
-					6 => 'L6 Up to 50% variant products.',
-					7 => 'L7',
-					8 => 'L8 One piece production. Full variation.'				);
-				echo form_dropdown('variant_flora', $data, set_value('variant_flora'), 'class="form-control"');
-
-				echo br(1);
-				echo form_label("Level of difficulty: ", "data");
-			?>
-				<button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#myModal3">Level of difficulty</button>
-			<?php
-				echo "<p class='text-justify'>" . $lvl_of_difficulty . "</p>";
-				echo '<div style="background-color:#e54444;">' . form_error('lvl_of_difficulty') . '</div>';
-				$data = array(
-					'' => 'Choose a value',
-					0 => 'L0 Not applicable',
-					1 => 'L1',
-					2 => 'L2 The task requires little to no training and is recommended for newly employed personnel.',
-					3 => 'L3',
-					4 => 'L4 The task is quite simple with little training required.',
-					5 => 'L5',
-					6 => 'L6 The task is slightly complex and requires moderate training and experience.',
-					7 => 'L7',
-					8 => 'L8 The task is very difficult and requires significant training and experience.'
-				);
-				echo form_dropdown('lvl_of_difficulty', $data, set_value('lvl_of_difficulty'), 'class="form-control"');
-
-				echo br(1);
-				echo form_label("Difficulty to use tool: ", "data");
-			?>
-				<button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#myModal4">Difficulty to use tool</button>
-			<?php
-				echo "<p class='text-justify'>" . $difficulty_of_use . "</p>";
-				echo '<div style="background-color:#e54444;">' . form_error('difficulty_of_use') . '</div>';
-				$data = array(
-					'' => 'Choose a value',
-					0 => 'L0 No tool use',
-					1 => 'L1',
-					2 => 'L2 The assembly task is performed mostly by hand and requires little or very simple tool use.',
-					3 => 'L3',
-					4 => 'L4 The assembly task contains little to moderate tool use',
-					5 => 'L5',
-					6 => 'L6 The assembly task contains moderate to heavy tool use.',
-					7 => 'L7',
-					8 => 'L8 The assembly task requires complex tools/tool use and/or special tools to perform'
-				);
-				echo form_dropdown('difficulty_of_use', $data, set_value('difficulty_of_use'), 'class="form-control"');
-
-				echo br(1);
-				echo form_label("Production awareness: ", "data");
-			?>
-				<button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#myModal5">Production awareness</button>
-			<?php
-				echo "<p class='text-justify'>" . $production_awareness . "</p>";
-				echo '<div style="background-color:#e54444;">' . form_error('production_awareness') . "</div>";
-				$data = array(
-					'' => 'Choose a value',
-					0 => 'L0 Not applicable',
-					1 => 'L1',
-					2 => 'L2 The assembly task is done purely out of routine and the sequence seldom changes.',
-					3 => 'L3',
-					4 => 'L4 The assembly task is mostly done on routine but deviant parts or assemblies do occur.',
-					5 => 'L5',
-					6 => 'L6 The assembly task is quite variable but still contains much routine work.',
-					7 => 'L7',
-					8 => 'L8 The assembly task is highly variable and contains little to very little routine work.'
-				);
-				echo form_dropdown('production_awareness', $data, set_value('production_awareness'), 'class="form-control"');
-
-				echo br(1);
-				echo form_label("Number of tools: ", "data");
-			?>
-				<button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#myModal6">Number of tools</button>
-			<?php
-				echo "<p class='text-justify'>" . $num_of_tools . "</p>";
-				echo '<div style="background-color:#e54444;">' . form_error('num_of_tools') . "</div>";
-				$data = array(
-					'' => 'Choose a value',
-					0 => 'L0 No tools used',
-					1 => 'L1',
-					2 => 'L2 1 to 5 tools and easily identified',
-					3 => 'L3',
-					4 => 'L4 More than 5 tools and easily identified',
-					5 => 'L5',
-					6 => 'L6 5-8 tools and not easily identified',
-					7 => 'L7',
-					8 => 'L8 More than 8 tools'
-				);
-				echo form_dropdown('num_of_tools', $data, set_value('num_of_tools'), 'class="form-control"');
-
-				echo br(1);
-				echo form_label("Mapping of workstation: ", "data");
-			?>
-				<button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#myModal7">Mapping of workstation</button>
-			<?php
-				echo "<p class='text-justify'>" . $mapping_of_workstation . "</p>";
-				echo '<div style="background-color:#e54444;">' . form_error('mapping_of_workstation') . "</div>";
-				$data = array(
-					'' => 'Choose a value',
-					0 => 'L0 Not applicable/the worker is free to set up the workstation and all its components to their own preferences.',
-					1 => 'L1',
-					2 => 'L2 Workstation layout heavily corresponds to assembly sequence.',
-					3 => 'L3',
-					4 => 'L4 Workstation layout completely corresponds to assembly sequence.',
-					5 => 'L5',
-					6 => 'L6 Workstation layout somewhat corresponds to assembly sequence.',
-					7 => 'L7',
-					8 => 'L8 Workstation layout does not correspond to assembly sequence.'
-				);
-				echo form_dropdown('mapping_of_workstation', $data, set_value('mapping_of_workstation'), 'class="form-control"');
-
-				echo br(1);
-				echo form_label("Parts identification: ", "data");
-			?>
-				<button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#myModal8">Parts identification</button>
-			<?php
-				echo "<p class='text-justify'>" . $parts_ident . "</p>";
-				echo '<div style="background-color:#e54444;">' . form_error('parts_ident') . "</div>";
-				$data = array(
-					'' => 'Choose a value',
-					0 => 'L0 Not applicable',
-					1 => 'L1',
-					2 => 'L2 Sequenced kits or kanban is used for most items.',
-					3 => 'L3',
-					4 => 'L4 Unsequenced kits or kanban is used for most items.',
-					5 => 'L5',
-					6 => 'L6 Parts identification through symbol syntax.',
-					7 => 'L7',
-					8 => 'L8 Parts identification through article numbers.'
-				);
-				echo form_dropdown('parts_ident', $data, set_value('parts_ident'), 'class="form-control"');
-
-				echo br(1);
-				echo form_label("Information cost: ", "data");
-			?>
-				<button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#myModal9">Information cost</button>
-			<?php
-				echo "<p class='text-justify'>" . $info_cost . "</p>";
-				echo '<div style="background-color:#e54444;">' . form_error('info_cost') . "</div>";
-				$data = array(
-					'' => 'Choose a value',
-					0 => 'L0 Not applicable',
-					1 => 'L1',
-					2 => 'L2 Information is not required for standard operations.',
-					3 => 'L3',
-					4 => 'L4 Information is easily accessible without significant physical or cognitive effort.',
-					5 => 'L5',
-					6 => 'L6 Information is accessible through minor cognitive or physical effort (max 1 meter).',
-					7 => 'L7',
-					8 => 'L8 Significant movement or actions are required for information access.'
-				);
-				echo form_dropdown('info_cost', $data, set_value('info_cost'), 'class="form-control"');
-
-				echo br(1);
-				echo form_label("Quality of instructions: ", "data");
-			?>
-				<button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#myModal10">Quality of instructions</button>
-			<?php
-				echo "<p class='text-justify'>" . $quality_of_instructions . "</p>";
-				echo '<div style="background-color:#e54444;">' . form_error('quality_of_instructions') . "</div>";
-				$data = array(
-					'' => 'Choose a value',
-					0 => 'L0 No instructions required',
-					1 => 'L1',
-					2 => 'L2 Information is not required for standard operations.',
-					3 => 'L3',
-					4 => 'L4 Assembly sequences are separated and contains mostly relevant information',
-					5 => 'L5',
-					6 => 'L6 Assembly sequences are not clearly separated and visibility OR readability is diminished.',
-					7 => 'L7',
-					8 => 'L8 Instruction is filled with non priority information. Visibility AND readability is diminished.'
-				);
-				echo form_dropdown('quality_of_instructions', $data, set_value('quality_of_instructions'), 'class="form-control"');
-
-				echo br(1);
-				echo form_label("Poke-a-yoke: ", "data");
-			?>
-				<button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#myModal11">Poke-a-yoke</button>
-			<?php
-				echo "<p class='text-justify'>" . $poke_a_yoke . "</p>";
-				echo '<div style="background-color:#e54444;">' . form_error('poke_a_yoke') . "</div>";
-				$data = array(
-					'' => 'Choose a value',
-					0 => 'L0 Assembly errors cannot be made due to the design and fit of the product.',
-					1 => 'L1',
-					2 => 'L2 Assembly errors can barely be made due to the design and fit of the product.',
-					3 => 'L3',
-					4 => 'L4 Assembly constraints are present in most of the assembly sequence.',
-					5 => 'L5',
-					6 => 'L6 Assembly constraints are present but not throughout the assembly sequence.',
-					7 => 'L7',
-					8 => 'L8 No poke-a-yoke solutions are implemented in the task.'
-				);
-				echo form_dropdown('poke_a_yoke', $data, set_value('poke_a_yoke'), 'class="form-control"');
-
-				echo br(1);
-				echo form_submit("contactSubmit", "Beräkna");
-				echo form_close();
-			?>
 		</div>
 	</div>
 </div>
