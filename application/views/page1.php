@@ -34,7 +34,7 @@
 
 		<div style="text-align:center">
 			<figure>
-				<img src="<?php echo base_url().'application/img/clam_figur_1.jpg'; ?>" width="80%">
+				<img src="<?php echo base_url().'application/img/clam_figur_1.jpg'; ?>" width="100%">
 			</figure>
 		</div>
 		<br/>
@@ -102,7 +102,7 @@
 		<br/>
 		<div style="text-align:center">
 			<figure>
-				<img src="<?php echo base_url().'application/img/clam_figure_muller_lyer.png'; ?>" width="40%">
+				<img src="<?php echo base_url().'application/img/clam_figure_muller_lyer.png'; ?>" width="100%">
 				<figcaption>Figure 1. The Müller-Lyer illusion.</figcaption>
 			</figure>
 		</div>
@@ -119,7 +119,7 @@
 		<br/>
 		<div style="text-align:center">
 			<figure>
-				<img src="<?php echo base_url().'application/img/clam_figure_pyramid.png'; ?>" width="60%">
+				<img src="<?php echo base_url().'application/img/clam_figure_pyramid.png'; ?>" width="100%">
 				<figcaption>Figure 2. The cognitive iceberg model, depicting the two different types of cognition – System 1/Experiential and System 2/Reflective cognition.</figcaption>
 			</figure>
 		</div>
@@ -148,7 +148,7 @@
 		<br/>
 		<div style="text-align:center">
 			<figure>
-				<img src="<?php echo base_url().'application/img/clam_figure_too_much.png'; ?>" width="60%">
+				<img src="<?php echo base_url().'application/img/clam_figure_too_much.png'; ?>" width="100%">
 				<figcaption>Figure 7. An example of too much information in one small area.</figcaption>
 			</figure>
 		</div>
@@ -168,7 +168,7 @@
 		<br/>
 		<div style="text-align:center">
 			<figure>
-				<img src="<?php echo base_url().'application/img/clam_figure_clam_structure.png'; ?>" width="60%">
+				<img src="<?php echo base_url().'application/img/clam_figure_clam_structure.png'; ?>" width="100%">
 				<figcaption>Figure 1. The structure of the CLAM.</figcaption>
 			</figure>
 		</div>
@@ -205,7 +205,7 @@
 					As an outcome of using the CLAM for assessment, a scoring interval of cognitive load is developed, see figure 2, below.
 				</p>
 
-				<table border="1" style="width:50%; margin: auto;">
+				<table border="1" style="width:100%; margin: auto;">
 					<tr>
 						<th>
 							Interval
