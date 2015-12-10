@@ -85,17 +85,17 @@ class Site extends CI_Controller {
 		$this->load->helper(['form', 'url']);
 		$this->load->library('form_validation');
 
-		$this->form_validation->set_rules('saturation', 'Saturation', 'required|greater_than[0]');
-		$this->form_validation->set_rules('variant_flora', 'Variant flora', 'required|greater_than[0]');
-		$this->form_validation->set_rules('lvl_of_difficulty', 'Level of difficulty', 'required|greater_than[0]');
-		$this->form_validation->set_rules('difficulty_of_use', 'Difficulty of use', 'required|greater_than[0]');
-		$this->form_validation->set_rules('production_awareness', 'Production awareness', 'required|greater_than[0]');
-		$this->form_validation->set_rules('num_of_tools', 'Number of tools', 'required|greater_than[0]');
-		$this->form_validation->set_rules('mapping_of_workstation', 'Mapping of workstation', 'required|greater_than[0]');
-		$this->form_validation->set_rules('parts_ident', 'Identification of parts', 'required|greater_than[0]');
-		$this->form_validation->set_rules('info_cost', 'Cost of information', 'required|greater_than[0]');
-		$this->form_validation->set_rules('quality_of_instructions', 'Quality of instructions', 'required|greater_than[0]');
-		$this->form_validation->set_rules('poke_a_yoke', 'Poke-a-yoke', 'required|greater_than[0]');
+		$this->form_validation->set_rules('saturation', 'Saturation', 'required');
+		$this->form_validation->set_rules('variant_flora', 'Variant flora', 'required');
+		$this->form_validation->set_rules('lvl_of_difficulty', 'Level of difficulty', 'required');
+		$this->form_validation->set_rules('difficulty_of_use', 'Difficulty of use', 'required');
+		$this->form_validation->set_rules('production_awareness', 'Production awareness', 'required');
+		$this->form_validation->set_rules('num_of_tools', 'Number of tools', 'required');
+		$this->form_validation->set_rules('mapping_of_workstation', 'Mapping of workstation', 'required');
+		$this->form_validation->set_rules('parts_ident', 'Identification of parts', 'required');
+		$this->form_validation->set_rules('info_cost', 'Cost of information', 'required');
+		$this->form_validation->set_rules('quality_of_instructions', 'Quality of instructions', 'required');
+		$this->form_validation->set_rules('poke_a_yoke', 'Poke-a-yoke', 'required');
 
 		if ($this->form_validation->run() == TRUE) {
 			$indata1[] = $this->input->post('saturation');
