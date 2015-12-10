@@ -32,7 +32,12 @@
 			The CLAM handbook consists of several parts (see Figure 1):
 		</p>
 
-		<img src="bild">
+		<div style="text-align:center">
+			<figure>
+				<img src="<?php echo base_url().'application/img/clam_figur_1.jpg'; ?>" width="80%">
+			</figure>
+		</div>
+		<br/>
 
 		<p class="text-justify">
 			Part A contains a background seaction, where underlying relevant theories of the human cognitive systems (strengths and limitations) and especially cognitive load are briefly presented. It is also stressed why it is important to consider these issues within manufacturing.
@@ -94,7 +99,14 @@
 			Kahneman (2011) points out that some of our mental activities become fast and automatic because of prolonged practice, although they from the very beginning needed conscious attention, e.g., reading skills which normally runs on our automatic pilot in the skilled reader. The limited capacity for attention is the central pinnacle for cognitive load, and when acting beyond that limit, failure appears. The division of labour between the two systems is very efficient, it minimises effort and optimises performance, in most of the time. However, System 1 has some biases, and sometimes provides the wrong reaction and it cannot be turned off. This becomes obvious when there is a conflict between the two systems. One major task of System 2 is to overrule or provide a reflective and conscious “second opinion” of the automatic reactions of System 1. This is for instance common when perceiving so called optical illusions, like the Müller-Lyer illusion (see Figure 1).
 		</p>
 
-		<img src="figure1">
+		<br/>
+		<div style="text-align:center">
+			<figure>
+				<img src="<?php echo base_url().'application/img/clam_figure_muller_lyer.png'; ?>" width="40%">
+				<figcaption>Figure 1. The Müller-Lyer illusion.</figcaption>
+			</figure>
+		</div>
+		<br/>
 
 		<p class="text-justify">
 			Although consciously knowing via System 2 that the two horizontal lines have the same length, the automatically reaction when visually perceiving the two lines via System 1, offers another answer that is hard to deny, namely that the lines seem to be of different length. Following this line of argument, humans sometimes suffer from cognitive illusions, i.e., illusions of thought, which are quite hard to detect and overcome. The reason is that System 1 operates automatically and cannot be switched off by choice, and biases cannot be avoided since System 2 has not received any hint that there might be an error. A promising way to overcome this bias is learning to recognise particular situations in which mistakes are likely to appear. Continuously questioning our thought processes via System 2 is not a viable approach, however, since it is impractical, too slow and has a limited capacity (Kahneman, 2011).
@@ -104,9 +116,14 @@
 			To sum up, the both modes of cognition; (1) System 1/Experiential cognition and (2) System 2/Reflective cognition are needed and neither is superior to the other, but they differ in requirements and function, as described earlier. It should be pointed out that they are essential for human cognition, although each mode requires different kinds of technical support to function properly. Figure 2 below display the two modes of cognition in the so called “cognitive iceberg” model and visualises that Experiential cognition/ System 1 are the mode that is less demanding, and has the largest capacity, while the Reflective mode/ System 2 requires a higher degree of awareness, has a limited capacity, and is the mode we usually assume is the place in which “thinking” actually occurs.
 		</p>
 
-		<p class="text-justify">
-			<em>Figure 2. The cognitive iceberg model, depicting the two different types of cognition – System 1/Experiential and System 2/Reflective cognition.</em>
-		</p>
+		<br/>
+		<div style="text-align:center">
+			<figure>
+				<img src="<?php echo base_url().'application/img/clam_figure_pyramid.png'; ?>" width="60%">
+				<figcaption>Figure 2. The cognitive iceberg model, depicting the two different types of cognition – System 1/Experiential and System 2/Reflective cognition.</figcaption>
+			</figure>
+		</div>
+		<br/>
 
 		<p class="text-justify">
 			However, these two modes of cognition do not cover the whole cognitive spectrum, but it makes it possible to highlight and compare certain characteristics of human cognition. In everyday life, we use a mix of these modes simultaneously, and the challenge when designing technology is to avoid forcing the use of technology towards one extreme or the other. That is, there is a need to have a proper balance between reflection and experiencing, so the human cognizer is not forced to use her/his limited conscious capacity to interpret the user interface as such, instead the human cognizer should use the cognitive capacity to solve the problem at hand or make appropriate decisions.
@@ -117,7 +134,7 @@
 		</p>
 
 		<p class="text-justify">
-			Through studies in the industry, an interesting observation was made regarding the use of information [26, 27]. Often the assemblers were provided with too much information rather than the appropriate information, causing information overload for the assembler. Wilson [28] defines information overload as: 
+			Through studies in the industry, an interesting observation was made regarding the use of information [26, 27]. Often the assemblers were provided with too much information rather than the appropriate information, causing information overload for the assembler. Wilson [28] defines information overload as:
 		</p>
 
 		<p class="text-justify">
@@ -128,9 +145,14 @@
 			In a manual assembly environment, the problem with information overload is usually due to a combination of high demands on work rate and accuracy respectively, especially in the automotive industry. When the assembler is faced with too much information, the information overload turns into a stressful situation, which causes high cognitive load. Information overload is exemplified in figure 7, where the information on the plastic boards instructs the assembly personnel of what component variant to select and assemble.
 		</p>
 
-		<p class="text-justify">
-			<em>Figure 7. An example of too much information in one small area.</em>
-		</p>
+		<br/>
+		<div style="text-align:center">
+			<figure>
+				<img src="<?php echo base_url().'application/img/clam_figure_too_much.png'; ?>" width="60%">
+				<figcaption>Figure 7. An example of too much information in one small area.</figcaption>
+			</figure>
+		</div>
+		<br/>
 
 		<p class="text-justify">
 			Both too high cognitive load and information overload increase the risk for humans to err. Certain reasons why people make errors are we sometimes are forced to interact with technology, machines or instructions that are designed in ways that incompatible with our modes of cognition. The limited memory capacity is used for remembering details that make no sense to us or (it is easier to recognize than recall), having to focus our attention on static situations or very similarly appearing displays or rows, and lack of adequate feedback. Thus people make errors, and the overall aim is to design technology etc., in ways that we are cognitively suited to and offer situations that minimize errors and high cognitive load.
@@ -142,6 +164,16 @@
 		<p class="text-justify">
 			Part C will describe all the relevant factors that affect cognitive load for the tool. The involved factors, along with a brief description and a suggestion for how the factor can be measured or quantified, are briefly presented below. Note that the unit of analysis is on the workstation level (including both the human and his/her working environment in the unit of analysis), including the tasks and the workstation design/layout. Each factor should thus be considered by their impact on each workstation, not individual tasks. These factors are accompanied by details and motivations of good and poor design according to the cognitive and design literature. The factors identified in the current version of the tool include both task- and workstation-related factors.
 		</p>
+
+		<br/>
+		<div style="text-align:center">
+			<figure>
+				<img src="<?php echo base_url().'application/img/clam_figure_clam_structure.png'; ?>" width="60%">
+				<figcaption>Figure 1. The structure of the CLAM.</figcaption>
+			</figure>
+		</div>
+		<br/>
+
 		<div class="row">
 			<div class="col-md-12">
 				<ul>
@@ -172,6 +204,47 @@
 				<p class="text-justify">
 					As an outcome of using the CLAM for assessment, a scoring interval of cognitive load is developed, see figure 2, below.
 				</p>
+
+				<table border="1" style="width:50%; margin: auto;">
+					<tr>
+						<th>
+							Interval
+						</th>
+						<th></th>
+					</tr>
+					<tr>
+						<td align="center" style="background-color: #ff471a;">
+							> 3.2
+						</td>
+						<td align="center" style="background-color: #ff471a;">
+							High cognitive load
+						</td>
+					</tr>
+					<tr>
+						<td align="center" style="background-color: #ff9999;">
+							2.5 - 3.2
+						</td>
+						<td align="center" style="background-color: #ff9999;">
+							Moderate cognitive load
+						</td>
+					</tr>
+					<tr>
+						<td align="center" style="background-color: #ffff66;">
+							1.7 - 2.5
+						</td>
+						<td align="center" style="background-color: #ffff66;">
+							Low cognitive load
+						</td>
+					</tr>
+					<tr>
+						<td align="center" style="background-color: #4CAF50;">
+							1 - 1.7
+						</td>
+						<td align="center" style="background-color: #4CAF50">
+							Very low cognitive load
+						</td>
+					</tr>
+				</table>
 
 				<p class="text-justify">
 					The factor assessment is most easily conducted directly in your computer/smartphone/PDA. However, if you are unable to complete the assessment ”online”, away from the unit of assessment, it is possible to print the factor sheets, bring them to the shop floor for assessment, and then transfer the scores to the computer. The procedure for performing the assessment is based on the computer version of the tool.
