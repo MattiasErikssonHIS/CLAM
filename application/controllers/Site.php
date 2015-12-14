@@ -44,7 +44,7 @@ class Site extends CI_Controller {
 		$this->load->model('Database');
 
 		$data['heading'] = 'Clam tool page';
-		$data['results'] = $this->Database->show("clam");
+		$data['results'] = $this->Database->show("clam", "pageData");
 
 		if ($result > 0) {
 			$data['calc_result'] = $result;
